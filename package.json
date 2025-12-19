@@ -1,0 +1,24 @@
+{
+  "name": "detection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mateusz3124/Vulnerability-Detection/issues"
+  },
+  "homepage": "https://github.com/Mateusz3124/Vulnerability-Detection#readme",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "clipboardy": "^5.0.1",
+    "dotenv": "^17.2.3",
+    "fast-csv": "^5.0.5",
+    "sqlite3": "^5.1.7"
+  }
+}
