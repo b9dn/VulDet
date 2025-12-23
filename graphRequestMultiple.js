@@ -3,15 +3,14 @@ import sqlite from "sqlite3";
 import fs from "fs";
 import { GoogleGenAI } from "@google/genai";
 
-const samplesInOneRequestNum = 7;
-const requestLimit = 10;
+const samplesInOneRequestNum = 10;
+const requestLimit = 20;
 const sleepTime = 10;
 
-// const name = "tngtech/deepseek-r1t2-chimera:free";
+const name = "tngtech/deepseek-r1t2-chimera:free";
 // const name = "kwaipilot/kat-coder-pro:free";
-const name = "xiaomi/mimo-v2-flash:free";
 // const name = "gemini-2.5-flash";
-
+const graphType = "pdg"; // cfg, pdg, cpg14, cdg, ddg
 const isGemini = false;
 
 dotenv.config();
@@ -23,31 +22,35 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
     {
       role: "system",
       content:
-        "You are a security analysis assistant. Your job is to review code for vulnerabilities and security risks.",
+        "You are a security analysis assistant. Your job is to review code with additional graph representation for vulnerabilities and security risks.",
     },
     {
       role: "user",
-      content: `Analyze the following code samples for security vulnerabilities.
+      content: `Analyze the following code samples and ${graphType} graphs that describes them for security vulnerabilities.
 
 Rules:
-- Evaluate each code sample independently.
+- Evaluate each code sample and its graph independently.
 - For each sample, return exactly one word: "Safe" or "Vulnerable".
 - Do not explain your answers.
-- Do not rewrite the code.
+- Do not rewrite code, graph or provide explanations.
 - Do not add any extra text.
 
 Output format:
 Sample 1: Safe | Vulnerable
 Sample 2: Safe | Vulnerable
+
 ...
 
-Code samples:
+Code and graph samples:
 ${data
   .map(
     (el, index) => `
 Sample ${index + 1}:
 \`\`\`
+Code:
 ${el.code}
+Graph describing code:
+${el[graphType]}
 \`\`\`
 `
   )
@@ -75,7 +78,7 @@ ${el.code}
   const result = await response.json();
 
   const formattedResponse = result.choices[0].message.content.split("\n");
-  if(formattedResponse.length !== data.length) {
+  if (formattedResponse.length !== data.length) {
     console.error("Invalid response data length");
   }
 
@@ -95,39 +98,43 @@ ${el.code}
 const sendMessageGemini = async (data, model) => {
   const message = `You are a security analysis assistant. Your job is to review code for vulnerabilities and security risks.
 
-Analyze the following code samples for security vulnerabilities.
+Analyze the following code samples and ${graphType} graphs that describes them for security vulnerabilities.
 
 Rules:
-- Evaluate each code sample independently.
+- Evaluate each code sample and its graph independently.
 - For each sample, return exactly one word: "Safe" or "Vulnerable".
 - Do not explain your answers.
-- Do not rewrite the code.
+- Do not rewrite code, graph or provide explanations.
 - Do not add any extra text.
 
 Output format:
 Sample 1: Safe | Vulnerable
 Sample 2: Safe | Vulnerable
+
 ...
-Code samples:
+
+Code and graph samples:
 ${data
   .map(
     (el, index) => `
 Sample ${index + 1}:
 \`\`\`
+Code:
 ${el.code}
+Graph describing code:
+${el[graphType]}
 \`\`\`
 `
   )
   .join("\n")}
 `;
-
   const response = await ai.models.generateContent({
     model: model,
     contents: message,
   });
 
   const formattedResponse = response.text.split("\n");
-  if(formattedResponse.length !== data.length) {
+  if (formattedResponse.length !== data.length) {
     console.error("Invalid response data length");
   }
 
@@ -148,7 +155,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/\//g, "")}-MULTIPLE.json`;
+const path = `./results/${name.replace(/\//g, "")}-GRAPH-MULTIPLE.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {
@@ -175,23 +182,20 @@ db.all(
   async (err, rows) => {
     if (err) return console.error(err.message);
     for (let i = 0; i < requestLimit; i++) {
-      let data = rows.slice(i * samplesInOneRequestNum, (i + 1) * samplesInOneRequestNum);
+      let data = rows.slice(
+        i * samplesInOneRequestNum,
+        (i + 1) * samplesInOneRequestNum
+      );
       if (isGemini) {
         promises.push(
-          sendMessageGemini(
-            data,
-            name
-          ).catch((err) => {
+          sendMessageGemini(data, name).catch((err) => {
             console.error("Error", err.message);
             return null;
           })
         );
       } else {
         promises.push(
-          sendMessageOR(
-            data,
-            name
-          ).catch((err) => {
+          sendMessageOR(data, name).catch((err) => {
             console.error("Error", err.message);
             return null;
           })

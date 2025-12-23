@@ -140,7 +140,7 @@ db.all(
       }
       console.log("Success");
 
-      await sleep(3 * 1000);
+      await sleep(5 * 1000);
     }
 
 
