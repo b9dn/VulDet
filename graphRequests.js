@@ -8,6 +8,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./formatted_data/data.sqlite");
 
 // const name = "gemini-2.5-flash";
+// const name = "openai/gpt-5.2";
 const name = "kwaipilot/kat-coder-pro:free";
 const isGemini = false;
 const graphType = "pdg"; // cfg, pdg, cpg14, cdg, ddg
@@ -59,6 +60,12 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
     }
   );
 
+  if (!response.ok) {
+    const body = await response.text();
+    console.error("HTTP ERROR:", response.status, body);
+    throw new Error(`Request failed with status ${response.status}`);
+  }
+
   const result = await response.json();
 
   return {
@@ -77,9 +84,17 @@ const sendMessageGemini = async (data, model) => {
   - Otherwise, answer "Vulnerable".
   - Do not rewrite the code or provide explanations unless explicitly asked.
   
+
   Code:
   \`\`\`
   ${data.code}
+  \`\`\`
+  
+  Graph Type: ${graphType}
+  
+  Graph Data:
+  \`\`\`
+  ${data[graphType]}
   \`\`\``;
 
   const response = await ai.models.generateContent({
@@ -116,40 +131,31 @@ const whereClause = checkedIds.length
   ? `WHERE id NOT IN (${checkedIds.join(",")})`
   : "";
 
-const promises = [];
-
 db.all(
   `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT 20`,
   async (err, rows) => {
     if (err) return console.error(err.message);
-    for (const data of rows) {
-      if (isGemini) {
-        promises.push(
-          sendMessageGemini(data, name).catch((err) => {
-            console.error("Error", err.message);
-            return null;
-          })
-        );
-      } else {
-        promises.push(
-          sendMessageOR(data, name).catch((err) => {
-            console.error("Error", err.message);
-            return null;
-          })
-        );
+
+    const results = [];
+
+    try {
+      for (const data of rows) {
+        const promise = isGemini
+          ? sendMessageGemini(data, name)
+          : sendMessageOR(data, name);
+
+        const res = await promise;
+        results.push(res);
+
+        console.log("Success");
+        await sleep(5 * 1000);
       }
-      console.log("Success");
-
-      await sleep(5 * 1000);
+    } catch (err) {
+      console.error("PROCESS STOPPED:", err.message);
+    } finally {
+      const combined = [...prevResults, ...results];
+      fs.writeFileSync(path, JSON.stringify(combined, null, 2));
+      process.exit(1);
     }
-
-
-    Promise.all(promises).then((currResults) => {
-      const combined = [
-        ...prevResults,
-        ...currResults.filter((item) => item !== null),
-      ];
-      fs.writeFileSync(path, JSON.stringify(combined));
-    });
   }
 );
