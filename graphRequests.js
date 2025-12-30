@@ -8,8 +8,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./formatted_data/data.sqlite");
 
 // const name = "gemini-2.5-flash";
-// const name = "openai/gpt-5.2";
-const name = "kwaipilot/kat-coder-pro:free";
+const name = "openai/gpt-oss-120b:free";
 const isGemini = false;
 const graphType = "pdg"; // cfg, pdg, cpg14, cdg, ddg
 
@@ -132,7 +131,7 @@ const whereClause = checkedIds.length
   : "";
 
 db.all(
-  `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT 20`,
+  `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT 50`,
   async (err, rows) => {
     if (err) return console.error(err.message);
 

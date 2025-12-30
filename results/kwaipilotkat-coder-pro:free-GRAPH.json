@@ -2733,5 +2733,25 @@
     "id": 525,
     "expected": "Vulnerable",
     "received": "Vulnerable"
+  },
+  {
+    "id": 354,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 724,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 38,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 704,
+    "expected": "Vulnerable",
+    "received": "Safe"
   }
 ]

@@ -9,7 +9,7 @@ const sleepTime = 10;
 
 // const name = "tngtech/deepseek-r1t2-chimera:free";
 // const name = "kwaipilot/kat-coder-pro:free";
-const name = "xiaomi/mimo-v2-flash:free";
+const name = "openai/gpt-oss-120b:free";
 // const name = "gemini-2.5-flash";
 
 const isGemini = false;

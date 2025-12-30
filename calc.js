@@ -3,9 +3,9 @@ import fs from "fs";
 const s = "Safe";
 const v = "Vulnerable";
 
-// const name = "tngtechdeepseek-r1t2-chimera:free-MULTIPLE";
-const name = "kwaipilotkat-coder-pro:free-GRAPH";
-// const name = "gemini-2.5-flash-MULTIPLE";
+// const name = "kwaipilotkat-coder-pro:free-GRAPH";
+const name = "openaigpt-oss-120b:free-MULTIPLE";
+// const name = "openaigpt-oss-120b:free-GRAPH";
 const dataString = fs.readFileSync(`results/${name}.json`);
 const data = JSON.parse(dataString);
 
