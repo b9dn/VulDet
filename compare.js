@@ -54,6 +54,6 @@ fs.readdir("./results", (err, files) => {
   files.forEach((file) => {
     calc(file);
   });
-  
-  console.log(results);
+
+  fs.writeFileSync("results.json", JSON.stringify(results));
 });
