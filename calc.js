@@ -4,8 +4,8 @@ const s = "Safe";
 const v = "Vulnerable";
 
 // const name = "kwaipilotkat-coder-pro:free-GRAPH";
-const name = "openaigpt-oss-120b:free-MULTIPLE";
-// const name = "openaigpt-oss-120b:free-GRAPH";
+// const name = "openaigpt-oss-120b:free-MULTIPLE";
+const name = "openaigpt-oss-120b:free-JSON_GRAPH_CPG-SHORTER_VER";
 const dataString = fs.readFileSync(`results/${name}.json`);
 const data = JSON.parse(dataString);
 

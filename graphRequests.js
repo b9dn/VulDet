@@ -10,7 +10,7 @@ const db = new sqlite.Database("./formatted_data/data.sqlite");
 // const name = "gemini-2.5-flash";
 const name = "openai/gpt-oss-120b:free";
 const isGemini = false;
-const graphType = "pdg"; // cfg, pdg, cpg14, cdg, ddg
+const graphType = "json_graph_cpg_1"; // cfg, pdg, cpg14, cdg, ddg, json_graph_cpg_1
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
 
@@ -27,6 +27,8 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
       - If there are no vulnerabilities in the code and graph, answer "Safe".
       - If vulnerabilities are found, answer "Vulnerable".
       - Do not rewrite the code or graph or provide explanations unless explicitly asked.
+      - Take into account functions that are also identified as unsafe
+      - Additional graph is helper for better code understanding
       
       Code:
       \`\`\`
@@ -112,7 +114,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/\//g, "")}-GRAPH.json`;
+const path = `./results/${name.replace(/\//g, "")}-JSON_GRAPH_CPG-SHORTER_VER.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {

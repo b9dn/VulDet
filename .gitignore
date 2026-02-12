@@ -4,3 +4,5 @@ data*.csv
 data*.sqlite
 .venv
 formatted_data/
+.ipynb_checkpoints/
+workspace/
