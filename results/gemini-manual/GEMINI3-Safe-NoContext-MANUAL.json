@@ -1,0 +1,22 @@
+[
+  { "id": 1, "expected": "Safe", "received": "Safe" },
+  { "id": 2, "expected": "Safe", "received": "Safe" },
+  { "id": 3, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 4, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 5, "expected": "Safe", "received": "Safe" },
+  { "id": 6, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 7, "expected": "Safe", "received": "Safe" },
+  { "id": 8, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 9, "expected": "Safe", "received": "Safe" },
+  { "id": 10, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 11, "expected": "Safe", "received": "Safe" },
+  { "id": 12, "expected": "Safe", "received": "Safe" },
+  { "id": 13, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 14, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 15, "expected": "Safe", "received": "Safe" },
+  { "id": 16, "expected": "Safe", "received": "Safe" },
+  { "id": 17, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 18, "expected": "Safe", "received": "Safe" },
+  { "id": 19, "expected": "Safe", "received": "Vulnerable" },
+  { "id": 20, "expected": "Safe", "received": "Vulnerable" }
+]

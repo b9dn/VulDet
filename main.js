@@ -10,14 +10,14 @@ const db = new sqlite.Database("./data.sqlite");
 // const name = "tngtech/deepseek-r1t2-chimera:free";
 const name = "gemini-2.5-flash";
 const isGemini = true;
-const requestLimit = 9;
-const sleepTime = 10;
+const requestLimit = 10;
+const sleepTime = 20;
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   const messages = [
     {
       role: "user",
-      content: `Analyze the following c or cpp code for vulnerabilities.
+      content: `Analyze the following functions: ${data.names} written in c programming language for vulnerabilities.
 
 Rules:
 - Return exactly one word: "Safe" or "Vulnerable".
@@ -27,7 +27,7 @@ Rules:
 
 Code:
 \`\`\`
-${data.code}
+${data.codeContext}
 \`\`\``,
     },
   ];
@@ -51,14 +51,17 @@ ${data.code}
   const result = await response.json();
 
   console.log(result);
-  console.log(result.choices[0].message.content);
+
+  const splitted = result.choices[0].message.content.split("\n");
 
   return {
     id: data.id,
-    expected: data.isVulnerable ? "Vulnerable" : "Safe",
-    received: result.choices[0].message.content.replace(/\n/g, ""),
+    expected: "Safe",
+    received: splitted[splitted.length - 1],
+    explanation: result.choices[0].message.content,
     numTokensInput: result.usage.prompt_tokens,
     numTokensOutput: result.usage.completion_tokens,
+    numTokensThought: result.usage.completion_tokens_details.reasoning_tokens,
   };
 };
 
@@ -72,7 +75,7 @@ Rules:
 - Do not add any extra text.
 Code:
       \`\`\`
-      ${data.codeContext}
+      ${data.codeVulContext}
       \`\`\``;
 
   const response = await ai.models.generateContent({
@@ -82,7 +85,7 @@ Code:
 
   return {
     id: data.id,
-    expected: "Safe",
+    expected: "Vulnerable",
     received: response.text.replace(/\n/g, ""),
     numTokensInput: response.usageMetadata.promptTokenCount,
     numTokensOutput: response.usageMetadata.candidatesTokenCount,
@@ -94,7 +97,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/\//g, "")}-CONTEXT.json`;
+const path = `./results/${name.replace(/[<>:"/\\|?*]/g, "")}-CONTEXT.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {

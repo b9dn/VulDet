@@ -1,0 +1,161 @@
+Analyze the following c code samples for vulnerabilities.
+
+Rules:
+- Evaluate each code sample independently.
+- For each sample, return exactly one word: "Safe" or "Vulnerable".
+- Do not explain your answers.
+- Do not rewrite the code.
+- Do not add any extra text.
+
+Output format (in one line) chose either Safe or Vulnerable and devide answers with ; example:
+Sample 1: Safe | Vulnerable;Sample 2: Safe | Vulnerable
+
+...
+Code samples:
+
+Sample 1 (functions to check for vulnerability: file_extension):
+```
+const char *			/* O - File extension */ /* <=== file_extension */ 
+file_extension(const char *s)	/* I - Filename or URL */
+{
+  const char	*extension;	/* Pointer to directory separator */
+  static char	buf[1024];	/* Buffer for files with targets */
+
+
+  if (s == NULL)
+    return (NULL);
+  else if (!strncmp(s, "data:image/bmp;", 15))
+    return ("bmp");
+  else if (!strncmp(s, "data:image/gif;", 15))
+    return ("gif");
+  else if (!strncmp(s, "data:image/jpeg;", 16))
+    return ("jpg");
+  else if (!strncmp(s, "data:image/png;", 15))
+    return ("png");
+  else if ((extension = strrchr(s, '/')) != NULL)
+    extension ++;
+  else if ((extension = strrchr(s, '\\')) != NULL)
+    extension ++;
+  else
+    extension = s;
+
+  if ((extension = strrchr(extension, '.')) == NULL)
+    return ("");
+  else
+    extension ++;
+
+  if (strchr(extension, '#') == NULL)
+    return (extension);
+
+  strlcpy(buf, extension, sizeof(buf));
+
+  *(char *)strchr(buf, '#') = '\0';
+
+  return (buf);
+}
+
+```
+Sample 2 (functions to check for vulnerability: session_identity_decode):
+```
+static apr_status_t session_identity_decode(request_rec * r, session_rec * z) /* <=== session_identity_decode */ 
+{
+
+    char *last = NULL;
+    char *encoded, *pair;
+    const char *sep = "&";
+
+    /* sanity check - anything to decode? */
+    if (!z->encoded) {
+        return OK;
+    }
+
+    /* decode what we have */
+    encoded = apr_pstrdup(r->pool, z->encoded);
+    pair = apr_strtok(encoded, sep, &last);
+    while (pair && pair[0]) {
+        char *plast = NULL;
+        const char *psep = "=";
+        char *key = apr_strtok(pair, psep, &plast);
+        char *val = apr_strtok(NULL, psep, &plast);
+        if (key && *key) {
+            if (!val || !*val) {
+                apr_table_unset(z->entries, key);
+            }
+            else if (!ap_unescape_urlencoded(key) && !ap_unescape_urlencoded(val)) {
+                if (!strcmp(SESSION_EXPIRY, key)) {
+                    z->expiry = (apr_time_t) apr_atoi64(val);
+                }
+                else {
+                    apr_table_set(z->entries, key, val);
+                }
+            }
+        }
+        pair = apr_strtok(NULL, sep, &last);
+    }
+    z->encoded = NULL;
+    return OK;
+
+}
+
+```
+Sample 3 (functions to check for vulnerability: mem_resize):
+```
+static int mem_resize(jas_stream_memobj_t *m, int bufsize) /* <=== mem_resize */ 
+{
+	unsigned char *buf;
+
+	assert(m->buf_);
+	assert(bufsize >= 0);
+	if (!(buf = jas_realloc2(m->buf_, bufsize, sizeof(unsigned char)))) {
+		return -1;
+	}
+	m->buf_ = buf;
+	m->bufsize_ = bufsize;
+	return 0;
+}
+
+```
+Sample 4 (functions to check for vulnerability: calcstepsizes):
+```
+static int calcstepsizes(uint_fast16_t refstepsize, int numrlvls, /* <=== calcstepsizes */ 
+  uint_fast16_t *stepsizes)
+{
+	int bandno;
+	int numbands;
+	uint_fast16_t expn;
+	uint_fast16_t mant;
+	expn = JPC_QCX_GETEXPN(refstepsize);
+	mant = JPC_QCX_GETMANT(refstepsize);
+	numbands = 3 * numrlvls - 2;
+	for (bandno = 0; bandno < numbands; ++bandno) {
+//jas_eprintf("DEBUG %d %d %d %d %d\n", bandno, expn, numrlvls, bandno, ((numrlvls - 1) - (numrlvls - 1 - ((bandno > 0) ? ((bandno + 2) / 3) : (0)))));
+		stepsizes[bandno] = JPC_QCX_MANT(mant) | JPC_QCX_EXPN(expn + (bandno + 2) / 3);
+	}
+	return 0;
+}
+
+```
+Sample 5 (functions to check for vulnerability: check_1_6_dummy):
+```
+static void /* <=== check_1_6_dummy */ 
+check_1_6_dummy(kadm5_principal_ent_t entry, long mask,
+                int n_ks_tuple, krb5_key_salt_tuple *ks_tuple, char **passptr)
+{
+    int i;
+    char *password = *passptr;
+
+    /* Old-style randkey operations disallowed tickets to start. */
+    if (!(mask & KADM5_ATTRIBUTES) ||
+        !(entry->attributes & KRB5_KDB_DISALLOW_ALL_TIX))
+        return;
+
+    /* The 1.6 dummy password was the octets 1..255. */
+    for (i = 0; (unsigned char) password[i] == i + 1; i++);
+    if (password[i] != '\0' || i != 255)
+        return;
+
+    /* This will make the caller use a random password instead. */
+    *passptr = NULL;
+}
+
+```
