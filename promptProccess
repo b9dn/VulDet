@@ -1,0 +1,118 @@
+i am currently doing vulnerability detection. The samples i gave you are all safe can you improve my prompt so i get better accuracy but still keep prompt for general use
+
+1111111111111111111111111111111111111
+
+Analyze the following c code samples for vulnerabilities.
+
+Rules:
+- Evaluate each code sample independently.
+- For each sample, return exactly one word: "Safe" or "Vulnerable".
+- Do not explain your answers.
+- Do not rewrite the code.
+- Do not add any extra text.
+
+Output format (in one line) chose either Safe or Vulnerable and devide answers with ; example:
+Sample 1: Safe | Vulnerable;Sample 2: Safe | Vulnerable
+
+...
+Code samples:
+
+222222222222222222
+
+chain of thought
+
+Role: Act as a Senior Security Researcher specializing in Static Analysis (SAST).
+
+Task: Analyze the provided C code samples for security vulnerabilities (e.g., Buffer Overflows, Integer Overflows, Null Pointer Dereferences, or Logic Flaws).
+
+Rules:
+
+Step-by-Step Reasoning: For each sample, briefly trace the data flow of the specified function.
+
+Check for Edge Cases: Specifically evaluate integer wrapping in size calculations and boundary checks in loops.
+
+Evaluation: End each analysis with a clear label: [RESULT]: SAFE or [RESULT]: VULNERABLE.
+
+Independent Analysis: Treat each sample as a standalone unit.
+
+Output Format:
+Sample X: [Brief 2-3 sentence technical justification] -> [RESULT]
+
+in one last line summarize you answers with this format:
+
+Sample 1: Safe ;Sample 2: Safe
+
+Code Samples:
+
+33333333333333333333333333333
+
+Specjalizacja
+
+Role: Act as an Expert Security Code Auditor specializing in C/C++ memory safety and pointer arithmetic.
+
+Task: Conduct a deep-dive security analysis of the provided C code to identify exploitable vulnerabilities (e.g., CWE-119, CWE-190, CWE-476, CWE-822).
+
+Instructions:
+1. Data Flow Trace: For the specified function, create a step-by-step trace of critical variables. Specifically, note how 'length' or 'size' variables change and how they are used in memory allocations or array indexing.
+2. Pointer & Boundary Analysis: 
+   - Identify every array access or pointer dereference. 
+   - State the maximum possible value of the index vs. the allocated size.
+   - Check for "Off-by-one" errors in loop termination conditions (e.g., <= vs <).
+3. Integer Safety: Check all arithmetic involving \`size_t\`, \`int\`, or \`uint16_t\`. Explicitly look for:
+   - Underflow when subtracting from a length (e.g., len - 8).
+   - Overflow when calculating allocation sizes (e.g., count * size).
+   - Sign-extension issues when casting signed to unsigned.
+4. Edge Case Validation: Evaluate behavior for:
+   - Empty inputs (len = 0, NULL pointers).
+   - Minimum/Maximum integer values.
+   - Malformed headers or control characters.
+
+Output Format:
+- Technical Breakdown: [Detailed analysis of data flow and arithmetic]
+- Vulnerability Type: [e.g., Heap Buffer Overflow, Integer Underflow]
+- Trigger Scenario: [What specific input causes the crash/exploit?]
+- [RESULT]: VULNERABLE or SAFE
+
+in one last line summarize you answers with this format:
+
+Sample 1: Safe ;Sample 2: Safe
+
+Sample Code:
+[INSERT CODE HERE]
+
+
+
+44444444444444
+
+
+Role: Act as a Senior Static Analysis Engineer and Secure Code Auditor.
+
+Task: Perform a rigorous security formal analysis on the provided C/C++ code. Your goal is to distinguish between "best-practice violations" and "provably exploitable vulnerabilities."
+
+Analysis Requirements:
+
+Strict Specification Adherence: Evaluate pointer arithmetic and bounds based strictly on the ISO C standard. Do not assume a vulnerability exists unless a path to Undefined Behavior (UB) is clearly reachable.
+
+External Context Awareness: * Check for the presence of assert() and acknowledge that while they catch bugs in debug, they are often NOPs in release. However, do not mark as VULNERABLE unless the logic following the assert is explicitly broken.
+
+Consider standard library macro behaviors (e.g., size_t wrapping).
+
+Data Flow Invariants: Trace the lifecycle of length, size, and count variables. Identify if there are implicit constraints (e.g., a variable being unsigned) that naturally prevent underflow, even if no explicit check is present.
+
+Proof of Exploitability: For any identified issue, you must provide a "Proof of Concept" input. If no input can trigger the flaw due to the variable types or previous logic gates, mark it as SAFE/ROBUST.
+
+Output Format:
+
+Logical Trace: [Step-by-step variable state changes]
+
+Constraint Mapping: [What are the mathematical boundaries of each variable at the point of dereference?]
+
+Risk Assessment: [Distinguish between "Code Smell/Hardening Opportunity" and "Exploitable Flaw"]
+
+[FINAL VERDICT]: VULNERABLE or SAFE
+
+in one last line summarize you answers with this format:
+
+Sample 1: Safe ;Sample 2: Safe
+
+Sample Code:

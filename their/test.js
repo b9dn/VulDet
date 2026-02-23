@@ -3,7 +3,7 @@ import fs from "fs";
 const s = "Safe";
 const v = "Vulnerable";
 
-const dataString = fs.readFileSync(`r1-8b.json`);
+const dataString = fs.readFileSync(`r1.json`);
 const ress = JSON.parse(dataString);
 
 const arr = Object.values(ress);
@@ -33,13 +33,13 @@ for (const el of data) {
     el.received = el.received.includes(s) ? s : v;
   }
   if (el.received === s && el.expected === s) {
-    tp++;
-  } else if (el.received === v && el.expected === v) {
     tn++;
+  } else if (el.received === v && el.expected === v) {
+    tp++;
   } else if (el.received === s && el.expected === v) {
-    fp++;
-  } else if (el.received === v && el.expected === s) {
     fn++;
+  } else if (el.received === v && el.expected === s) {
+    fp++;
   } else {
     console.log(`incorrect: ${el.received}`);
   }

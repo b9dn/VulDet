@@ -7,7 +7,7 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./data.sqlite");
 
-// const name = "tngtech/deepseek-r1t2-chimera:free";
+// const name = "arcee-ai/trinity-large-preview:free";
 const name = "gemini-2.5-flash";
 const isGemini = true;
 const requestLimit = 10;
@@ -17,17 +17,28 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   const messages = [
     {
       role: "user",
-      content: `Analyze the following functions: ${data.names} written in c programming language for vulnerabilities.
+      content: `Role: Act as a Senior Security Researcher specializing in Static Analysis (SAST).
+
+Task: Analyze the provided C code sample for security vulnerabilities (e.g., Buffer Overflows, Integer Overflows, Null Pointer Dereferences, or Logic Flaws).
 
 Rules:
-- Return exactly one word: "Safe" or "Vulnerable".
-- Do not explain your answers.
-- Do not rewrite the code.
-- Do not add any extra text.
+
+Step-by-Step Reasoning: For each sample, briefly trace the data flow of the specified function.
+
+Check for Edge Cases: Specifically evaluate integer wrapping in size calculations and boundary checks in loops.
+
+Evaluation: End analysis with a clear label: [RESULT]: safe or [RESULT]: vulnerable.
+
+Output Format:
+Sample: [Brief 2-3 sentence technical justification] -> [RESULT]
+
+in one last line summarize you answers with this format:
+
+Sample: Safe
 
 Code:
 \`\`\`
-${data.codeContext}
+${data.codeVulContext}
 \`\`\``,
     },
   ];
@@ -56,8 +67,8 @@ ${data.codeContext}
 
   return {
     id: data.id,
-    expected: "Safe",
-    received: splitted[splitted.length - 1],
+    expected: "Vulnerable",
+    received: splitted[splitted.length - 1].split(":")[1].trim(),
     explanation: result.choices[0].message.content,
     numTokensInput: result.usage.prompt_tokens,
     numTokensOutput: result.usage.completion_tokens,
@@ -75,7 +86,7 @@ Rules:
 - Do not add any extra text.
 Code:
       \`\`\`
-      ${data.codeVulContext}
+      ${data.codeContext}
       \`\`\``;
 
   const response = await ai.models.generateContent({
@@ -85,7 +96,7 @@ Code:
 
   return {
     id: data.id,
-    expected: "Vulnerable",
+    expected: "Safe",
     received: response.text.replace(/\n/g, ""),
     numTokensInput: response.usageMetadata.promptTokenCount,
     numTokensOutput: response.usageMetadata.candidatesTokenCount,
@@ -112,8 +123,8 @@ const checkedIds = prevResults.map((val) => {
 });
 
 const whereClause = checkedIds.length
-  ? `WHERE id NOT IN (${checkedIds.join(",")})`
-  : "";
+  ? `WHERE id NOT IN (${checkedIds.join(",")}) and id > 20`
+  : "where id > 20";
 
 const promises = [];
 

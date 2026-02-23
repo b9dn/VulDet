@@ -5,9 +5,9 @@ import readline from "readline";
 const db = new sqlite.Database("data.sqlite");
 
 const useContext = false;
-const isSafe = false;
+const isSafe = true;
 
-const name = "GEMINI3-quick";
+const name = "GEMINI3-quickdasdsa";
 const samplesInOneRequestNum = 5;
 const path = `./results/${name.replace(/\//g, "")}-${isSafe ? "Safe" : "Vul"}-${useContext ? "Context" : "NoContext"}-SIMPLE-MANUAL.json`;
 let prevResults;
@@ -24,8 +24,8 @@ const checkedIds = prevResults.map((val) => {
 });
 
 const whereClause = checkedIds.length
-  ? `WHERE id NOT IN (${checkedIds.join(",")})`
-  : "";
+  ? `WHERE id NOT IN (${checkedIds.join(",")}) and id > 20`
+  : "where id > 20";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -36,21 +36,36 @@ function askQuestion(query) {
   return new Promise((resolve) => rl.question(query, resolve));
 }
 
-const initMessage = `Analyze the following c code samples for vulnerabilities.
+const initMessage = `Role: Act as an Expert Security Code Auditor specializing in C/C++ memory safety and pointer arithmetic.
 
-Rules:
-- Evaluate each code sample independently.
-- For each sample, return exactly one word: "Safe" or "Vulnerable".
-- Do not explain your answers.
-- Do not rewrite the code.
-- Do not add any extra text.
+Task: Conduct a deep-dive security analysis of the provided C code to identify exploitable vulnerabilities (e.g., CWE-119, CWE-190, CWE-476, CWE-822).
 
-Output format (in one line) chose either Safe or Vulnerable and devide answers with ; example:
-Sample 1: Safe | Vulnerable;Sample 2: Safe | Vulnerable
+Instructions:
+1. Data Flow Trace: For the specified function, create a step-by-step trace of critical variables. Specifically, note how 'length' or 'size' variables change and how they are used in memory allocations or array indexing.
+2. Pointer & Boundary Analysis: 
+   - Identify every array access or pointer dereference. 
+   - State the maximum possible value of the index vs. the allocated size.
+   - Check for "Off-by-one" errors in loop termination conditions (e.g., <= vs <).
+3. Integer Safety: Check all arithmetic involving \`size_t\`, \`int\`, or \`uint16_t\`. Explicitly look for:
+   - Underflow when subtracting from a length (e.g., len - 8).
+   - Overflow when calculating allocation sizes (e.g., count * size).
+   - Sign-extension issues when casting signed to unsigned.
+4. Edge Case Validation: Evaluate behavior for:
+   - Empty inputs (len = 0, NULL pointers).
+   - Minimum/Maximum integer values.
+   - Malformed headers or control characters.
 
-...
-Code samples:
+Output Format:
+- Technical Breakdown: [Detailed analysis of data flow and arithmetic]
+- Vulnerability Type: [e.g., Heap Buffer Overflow, Integer Underflow]
+- Trigger Scenario: [What specific input causes the crash/exploit?]
+- [RESULT]: VULNERABLE or SAFE
 
+in one last line summarize you answers with this format:
+
+Sample 1: Safe | Vulnerable ;Sample 2: Safe | Vulnerable
+
+Samples Code:
 `;
 
 let counter = 0;
@@ -63,6 +78,7 @@ db.all(`SELECT * FROM data ${whereClause}`, async (err, rows) => {
         counter * samplesInOneRequestNum,
         (counter + 1) * samplesInOneRequestNum,
       );
+
       const text = chosenRows
         .map((el, index) => {
           let code;
@@ -79,7 +95,6 @@ db.all(`SELECT * FROM data ${whereClause}`, async (err, rows) => {
               code = el.codeVul;
             }
           }
-          console;
           return `Sample ${index + 1} (functions to check for vulnerability: ${el.names}):
 \`\`\`
 ${code}

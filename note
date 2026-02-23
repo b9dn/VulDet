@@ -10,3 +10,11 @@
   },
   user_id: 'user_38byEIDJyxtsQkyAForsGekwqIU'
 }
+
+{
+  error: {
+    message: 'No endpoints found for tngtech/deepseek-r1t2-chimera:free.',
+    code: 404
+  },
+  user_id: 'user_38byEIDJyxtsQkyAForsGekwqIU'
+}

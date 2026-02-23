@@ -80,74 +80,82 @@
     "numTokensThought": 1286
   },
   {
-    "id": 11,
-    "expected": "Safe",
-    "received": "Safe",
-    "numTokensInput": 1145,
-    "numTokensOutput": 1,
-    "numTokensThought": 1347
-  },
-  {
-    "id": 12,
-    "expected": "Safe",
+    "id": 1,
+    "expected": "Vulnerable",
     "received": "Vulnerable",
-    "numTokensInput": 755,
+    "numTokensInput": 417,
     "numTokensOutput": 2,
-    "numTokensThought": 3053
+    "numTokensThought": 2101
   },
   {
-    "id": 13,
-    "expected": "Safe",
+    "id": 2,
+    "expected": "Vulnerable",
     "received": "Vulnerable",
-    "numTokensInput": 765,
+    "numTokensInput": 725,
+    "numTokensOutput": 2,
+    "numTokensThought": 1400
+  },
+  {
+    "id": 3,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1274,
     "numTokensOutput": 2
   },
   {
-    "id": 14,
-    "expected": "Safe",
+    "id": 4,
+    "expected": "Vulnerable",
     "received": "Vulnerable",
-    "numTokensInput": 598,
+    "numTokensInput": 636,
     "numTokensOutput": 2,
-    "numTokensThought": 2642
+    "numTokensThought": 1001
   },
   {
-    "id": 15,
-    "expected": "Safe",
+    "id": 5,
+    "expected": "Vulnerable",
     "received": "Vulnerable",
-    "numTokensInput": 371,
+    "numTokensInput": 753,
     "numTokensOutput": 2,
-    "numTokensThought": 2371
+    "numTokensThought": 2837
   },
   {
-    "id": 16,
-    "expected": "Safe",
+    "id": 6,
+    "expected": "Vulnerable",
     "received": "Safe",
-    "numTokensInput": 804,
+    "numTokensInput": 518,
     "numTokensOutput": 1,
-    "numTokensThought": 1891
+    "numTokensThought": 2656
   },
   {
-    "id": 17,
-    "expected": "Safe",
+    "id": 7,
+    "expected": "Vulnerable",
     "received": "Vulnerable",
-    "numTokensInput": 794,
+    "numTokensInput": 880,
     "numTokensOutput": 2,
-    "numTokensThought": 2043
+    "numTokensThought": 1399
   },
   {
-    "id": 18,
-    "expected": "Safe",
+    "id": 8,
+    "expected": "Vulnerable",
     "received": "Vulnerable",
-    "numTokensInput": 524,
+    "numTokensInput": 470,
     "numTokensOutput": 2,
-    "numTokensThought": 2001
+    "numTokensThought": 782
   },
   {
-    "id": 19,
-    "expected": "Safe",
-    "received": "Safe",
-    "numTokensInput": 937,
-    "numTokensOutput": 1,
-    "numTokensThought": 2409
+    "id": 9,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1309,
+    "numTokensOutput": 2,
+    "numTokensThought": 1797
+  },
+  {
+    "id": 10,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 674,
+    "numTokensOutput": 2,
+    "numTokensThought": 1494
   }
 ]
