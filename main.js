@@ -7,38 +7,26 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./data.sqlite");
 
-// const name = "arcee-ai/trinity-large-preview:free";
-const name = "gemini-2.5-flash";
-const isGemini = true;
-const requestLimit = 10;
-const sleepTime = 20;
+const name = "qwen/qwen3-235b-a22b-thinking-2507";
+// const name = "gemini-2.5-flash";
+const isGemini = false;
+const requestLimit = 60;
+const sleepTime = 2;
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   const messages = [
     {
       role: "user",
-      content: `Role: Act as a Senior Security Researcher specializing in Static Analysis (SAST).
+      content: `You are a security analysis assistant. Your job is to review code for vulnerabilities and security risks.
+Analyze the following code for security vulnerabilities.
 
-Task: Analyze the provided C code sample for security vulnerabilities (e.g., Buffer Overflows, Integer Overflows, Null Pointer Dereferences, or Logic Flaws).
-
-Rules:
-
-Step-by-Step Reasoning: For each sample, briefly trace the data flow of the specified function.
-
-Check for Edge Cases: Specifically evaluate integer wrapping in size calculations and boundary checks in loops.
-
-Evaluation: End analysis with a clear label: [RESULT]: safe or [RESULT]: vulnerable.
-
-Output Format:
-Sample: [Brief 2-3 sentence technical justification] -> [RESULT]
-
-in one last line summarize you answers with this format:
-
-Sample: Safe
+- Only answer "Safe" if there are no security vulnerabilities.
+- Otherwise, answer "Vulnerable".
+- Do not rewrite the code or provide explanations unless explicitly asked.
 
 Code:
 \`\`\`
-${data.codeVulContext}
+${data.code}
 \`\`\``,
     },
   ];
@@ -63,13 +51,10 @@ ${data.codeVulContext}
 
   console.log(result);
 
-  const splitted = result.choices[0].message.content.split("\n");
-
   return {
     id: data.id,
     expected: "Vulnerable",
-    received: splitted[splitted.length - 1].split(":")[1].trim(),
-    explanation: result.choices[0].message.content,
+    received: result.choices[0].message.content,
     numTokensInput: result.usage.prompt_tokens,
     numTokensOutput: result.usage.completion_tokens,
     numTokensThought: result.usage.completion_tokens_details.reasoning_tokens,
@@ -86,7 +71,7 @@ Rules:
 - Do not add any extra text.
 Code:
       \`\`\`
-      ${data.codeContext}
+      ${data.code}
       \`\`\``;
 
   const response = await ai.models.generateContent({
@@ -123,7 +108,7 @@ const checkedIds = prevResults.map((val) => {
 });
 
 const whereClause = checkedIds.length
-  ? `WHERE id NOT IN (${checkedIds.join(",")}) and id > 20`
+  ? `WHERE id NOT IN (${checkedIds.join(",")}) and  id > 20`
   : "where id > 20";
 
 const promises = [];
