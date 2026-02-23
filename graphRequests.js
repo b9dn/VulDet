@@ -8,9 +8,9 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./formatted_data/data.sqlite");
 
 // const name = "gemini-2.5-flash";
-const name = "openai/gpt-oss-120b:free";
+const name = "arcee-ai/trinity-large-preview:free";
 const isGemini = false;
-const graphType = "json_graph_cpg_1"; // cfg, pdg, cpg14, cdg, ddg, json_graph_cpg_1
+const graphType = "llm_textgraph_pdg"; // cfg, pdg, cpg14, cdg, ddg, json_graph_cpg_1, llm_textgraph, llm_textgraph_pdg
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
 
@@ -29,13 +29,14 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
       - Do not rewrite the code or graph or provide explanations unless explicitly asked.
       - Take into account functions that are also identified as unsafe
       - Additional graph is helper for better code understanding
+      - Answer using only ONE WORD and do not add anything else
       
       Code:
       \`\`\`
       ${data.code}
       \`\`\`
 
-      Graph Type: ${graphType}
+      Graph Type: PDG
 
       Graph Data:
       \`\`\`
@@ -114,7 +115,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/\//g, "")}-JSON_GRAPH_CPG-SHORTER_VER.json`;
+const path = `./results/${name.replace(/\//g, "")}-TEXTGRAPH_PDG.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {
@@ -128,12 +129,10 @@ const checkedIds = prevResults.map((val) => {
   return val.id;
 });
 
-const whereClause = checkedIds.length
-  ? `WHERE id NOT IN (${checkedIds.join(",")})`
-  : "";
+const whereClause = `WHERE id NOT IN (${checkedIds.join(",")}) AND ${graphType} IS NOT NULL`;
 
 db.all(
-  `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT 50`,
+  `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT 100`,
   async (err, rows) => {
     if (err) return console.error(err.message);
 

@@ -3,9 +3,8 @@ import fs from "fs";
 const s = "Safe";
 const v = "Vulnerable";
 
-// const name = "kwaipilotkat-coder-pro:free-GRAPH";
 // const name = "openaigpt-oss-120b:free-MULTIPLE";
-const name = "openaigpt-oss-120b:free-JSON_GRAPH_CPG-SHORTER_VER";
+const name = "arcee-aitrinity-large-preview:free-TEXTGRAPH_PDG";
 const dataString = fs.readFileSync(`results/${name}.json`);
 const data = JSON.parse(dataString);
 
@@ -20,13 +19,13 @@ for (const el of data) {
     el.received = el.received.includes(s) ? s : v;
   }
   if (el.received === s && el.expected === s) {
-    tp++;
-  } else if (el.received === v && el.expected === v) {
     tn++;
+  } else if (el.received === v && el.expected === v) {
+    tp++;
   } else if (el.received === s && el.expected === v) {
-    fp++;
-  } else if (el.received === v && el.expected === s) {
     fn++;
+  } else if (el.received === v && el.expected === s) {
+    fp++;
   } else {
     console.log(`incorrect: ${el.received}`);
   }
