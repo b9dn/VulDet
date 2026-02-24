@@ -7,27 +7,34 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./data.sqlite");
 
-const name = "qwen/qwen3-235b-a22b-thinking-2507";
+const name = "arcee-ai/trinity-large-preview:free";
 // const name = "gemini-2.5-flash";
 const isGemini = false;
-const requestLimit = 60;
-const sleepTime = 2;
+const requestLimit = 100;
+const sleepTime = 3;
+const testType = "Vulnerable"; // Safe or Vulnerable
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   const messages = [
+    { 
+      role: "system",
+      content: "You are a security analysis assistant. Your job is to strictly review code for real, exploitable security vulnerabilities."
+    },
     {
       role: "user",
-      content: `You are a security analysis assistant. Your job is to review code for vulnerabilities and security risks.
-Analyze the following code for security vulnerabilities.
-
-- Only answer "Safe" if there are no security vulnerabilities.
-- Otherwise, answer "Vulnerable".
-- Do not rewrite the code or provide explanations unless explicitly asked.
-
-Code:
-\`\`\`
-${data.code}
-\`\`\``,
+      content: `Analyze the following code strictly for actual, exploitable security vulnerabilities.
+  
+  Rules:
+  - Answer ONLY with a single word: "Safe" or "Vulnerable"
+  - Answer "Safe" if there are no clear, exploitable vulnerabilities present
+  - Answer "Vulnerable" ONLY if you find a concrete, specific vulnerability (e.g. SQL injection, XSS, path traversal, hardcoded secrets, command injection, etc.)
+  - Do NOT flag theoretical risks, bad practices, missing best practices, or stylistic issues
+  - Do NOT include any explanation, list, or additional text - just one word
+  
+  Code:
+  \`\`\`
+  ${testType == "Safe" ? data.codeContext : data.codeVulContext}
+  \`\`\``,
     },
   ];
 
@@ -49,11 +56,9 @@ ${data.code}
 
   const result = await response.json();
 
-  console.log(result);
-
   return {
     id: data.id,
-    expected: "Vulnerable",
+    expected: testType,
     received: result.choices[0].message.content,
     numTokensInput: result.usage.prompt_tokens,
     numTokensOutput: result.usage.completion_tokens,
@@ -93,7 +98,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/[<>:"/\\|?*]/g, "")}-CONTEXT.json`;
+const path = `./results/${name.replace(/[<>:"/\\|?*]/g, "")}-VULNERABLE_CONTEXT.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {
@@ -107,9 +112,7 @@ const checkedIds = prevResults.map((val) => {
   return val.id;
 });
 
-const whereClause = checkedIds.length
-  ? `WHERE id NOT IN (${checkedIds.join(",")}) and  id > 20`
-  : "where id > 20";
+const whereClause = `WHERE id NOT IN (${checkedIds.join(",")})`;
 
 const promises = [];
 
@@ -134,7 +137,8 @@ db.all(
         );
       }
 
-      await sleep(sleepTime * 1000);
+      console.log("Next");
+      await sleep(sleepTime * 2000);
     }
 
     Promise.all(promises).then((currResults) => {
