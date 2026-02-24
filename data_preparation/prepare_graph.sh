@@ -50,7 +50,8 @@ process_entry() {
         if [[ -f "$graphfile" ]]; then
             graph=$(cat $graphfile)
             echo Graph = $graph
-            sqlite3 $DB "UPDATE data SET $graphtype='$(esc $graph)' WHERE id=$id;"
+            echo "UPDATE data SET $graphtype='$(esc $graph)' WHERE id=$id;" > "$tmp/graphsqlite3"
+            sqlite3 $DB < "$tmp/graphsqlite3"
             echo -e "${green}Success id = $id, graphtype = $graphtype $endcolor"
         else
             echo -e "${red}Invalid output format for id = $id, graphtype = $graphtype $endcolor"

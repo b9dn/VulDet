@@ -4,7 +4,7 @@ const s = "Safe";
 const v = "Vulnerable";
 
 // const name = "openaigpt-oss-120b:free-MULTIPLE";
-const name = "arcee-aitrinity-large-preview:free-TEXTGRAPH_PDG";
+const name = "arcee-aitrinity-large-preview:free-CPG";
 const dataString = fs.readFileSync(`results/${name}.json`);
 const data = JSON.parse(dataString);
 

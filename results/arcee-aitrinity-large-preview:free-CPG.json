@@ -3788,5 +3788,160 @@
     "id": 515,
     "expected": "Vulnerable",
     "received": "Safe"
+  },
+  {
+    "id": 601,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 718,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 438,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 619,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 639,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 595,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 411,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 535,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 769,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 795,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 413,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 444,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 489,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 737,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 682,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 623,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 530,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 799,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 709,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 437,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 705,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 747,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 475,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 544,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 753,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 652,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 450,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 532,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 441,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 598,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 565,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
   }
 ]
