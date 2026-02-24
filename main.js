@@ -7,12 +7,13 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./data.sqlite");
 
-const name = "arcee-ai/trinity-large-preview:free";
+const name = "stepfun/step-3.5-flash:free";
 // const name = "gemini-2.5-flash";
 const isGemini = false;
-const requestLimit = 100;
-const sleepTime = 3;
+const requestLimit = 400;
+const sleepTime = 2;
 const testType = "Vulnerable"; // Safe or Vulnerable
+const path = `./results/${name.replace(/[<>:"/\\|?*]/g, "")}-VULNERABLE.json`;
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   const messages = [
@@ -33,7 +34,7 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   
   Code:
   \`\`\`
-  ${testType == "Safe" ? data.codeContext : data.codeVulContext}
+  ${testType == "Safe" ? data.code : data.codeVul}
   \`\`\``,
     },
   ];
@@ -98,7 +99,6 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/[<>:"/\\|?*]/g, "")}-VULNERABLE_CONTEXT.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {
@@ -138,7 +138,7 @@ db.all(
       }
 
       console.log("Next");
-      await sleep(sleepTime * 2000);
+      await sleep(sleepTime * 1000);
     }
 
     Promise.all(promises).then((currResults) => {

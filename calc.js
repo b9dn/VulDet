@@ -3,7 +3,7 @@ import fs from "fs";
 const s = "Safe";
 const v = "Vulnerable";
 
-const name = "arcee-aitrinity-large-previewfree-VULNERABLE_CONTEXT";
+const name = "combine";
 const dataString = fs.readFileSync(`results/${name}.json`);
 const data = JSON.parse(dataString);
 

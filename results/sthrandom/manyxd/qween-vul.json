@@ -1,0 +1,482 @@
+[
+  {
+    "id": 21,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 251,
+    "numTokensOutput": 1848,
+    "numTokensThought": 1841
+  },
+  {
+    "id": 22,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 510,
+    "numTokensOutput": 3629,
+    "numTokensThought": 3622
+  },
+  {
+    "id": 23,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 909,
+    "numTokensOutput": 4571,
+    "numTokensThought": 4565
+  },
+  {
+    "id": 24,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 691,
+    "numTokensOutput": 901,
+    "numTokensThought": 894
+  },
+  {
+    "id": 25,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 175,
+    "numTokensOutput": 1428,
+    "numTokensThought": 1421
+  },
+  {
+    "id": 26,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 718,
+    "numTokensOutput": 15170,
+    "numTokensThought": 15163
+  },
+  {
+    "id": 27,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3411,
+    "numTokensOutput": 2698,
+    "numTokensThought": 2691
+  },
+  {
+    "id": 28,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2903,
+    "numTokensOutput": 5936,
+    "numTokensThought": 5929
+  },
+  {
+    "id": 29,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 950,
+    "numTokensOutput": 4465,
+    "numTokensThought": 4458
+  },
+  {
+    "id": 30,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 610,
+    "numTokensOutput": 3161,
+    "numTokensThought": 3154
+  },
+  {
+    "id": 31,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2039,
+    "numTokensOutput": 4643,
+    "numTokensThought": 4636
+  },
+  {
+    "id": 32,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 660,
+    "numTokensOutput": 2892,
+    "numTokensThought": 2885
+  },
+  {
+    "id": 33,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 329,
+    "numTokensOutput": 3273,
+    "numTokensThought": 3266
+  },
+  {
+    "id": 34,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2261,
+    "numTokensOutput": 7675,
+    "numTokensThought": 7668
+  },
+  {
+    "id": 35,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 377,
+    "numTokensOutput": 4468,
+    "numTokensThought": 4461
+  },
+  {
+    "id": 36,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 419,
+    "numTokensOutput": 3669,
+    "numTokensThought": 3662
+  },
+  {
+    "id": 37,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3255,
+    "numTokensOutput": 5724,
+    "numTokensThought": 5718
+  },
+  {
+    "id": 38,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2535,
+    "numTokensOutput": 3135,
+    "numTokensThought": 3129
+  },
+  {
+    "id": 39,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1909,
+    "numTokensOutput": 3819,
+    "numTokensThought": 3813
+  },
+  {
+    "id": 40,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1409,
+    "numTokensOutput": 8601,
+    "numTokensThought": 8594
+  },
+  {
+    "id": 41,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 326,
+    "numTokensOutput": 1008,
+    "numTokensThought": 1001
+  },
+  {
+    "id": 42,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 421,
+    "numTokensOutput": 2660,
+    "numTokensThought": 2653
+  },
+  {
+    "id": 43,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2347,
+    "numTokensOutput": 8242,
+    "numTokensThought": 8235
+  },
+  {
+    "id": 44,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1048,
+    "numTokensOutput": 1890,
+    "numTokensThought": 1883
+  },
+  {
+    "id": 45,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 843,
+    "numTokensOutput": 7068,
+    "numTokensThought": 7061
+  },
+  {
+    "id": 46,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1439,
+    "numTokensOutput": 6180,
+    "numTokensThought": 6173
+  },
+  {
+    "id": 47,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1978,
+    "numTokensOutput": 3206,
+    "numTokensThought": 3199
+  },
+  {
+    "id": 48,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 838,
+    "numTokensOutput": 9563,
+    "numTokensThought": 9556
+  },
+  {
+    "id": 49,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2517,
+    "numTokensOutput": 7339,
+    "numTokensThought": 7332
+  },
+  {
+    "id": 50,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 512,
+    "numTokensOutput": 4379,
+    "numTokensThought": 4372
+  },
+  {
+    "id": 51,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2038,
+    "numTokensOutput": 9284,
+    "numTokensThought": 9277
+  },
+  {
+    "id": 52,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 467,
+    "numTokensOutput": 4878,
+    "numTokensThought": 4871
+  },
+  {
+    "id": 53,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 358,
+    "numTokensOutput": 7495,
+    "numTokensThought": 7488
+  },
+  {
+    "id": 54,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 586,
+    "numTokensOutput": 5703,
+    "numTokensThought": 5696
+  },
+  {
+    "id": 55,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 833,
+    "numTokensOutput": 1756,
+    "numTokensThought": 1749
+  },
+  {
+    "id": 56,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1463,
+    "numTokensOutput": 4496,
+    "numTokensThought": 4489
+  },
+  {
+    "id": 57,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 519,
+    "numTokensOutput": 6323,
+    "numTokensThought": 6316
+  },
+  {
+    "id": 58,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1112,
+    "numTokensOutput": 4137,
+    "numTokensThought": 4130
+  },
+  {
+    "id": 59,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 157,
+    "numTokensOutput": 4458,
+    "numTokensThought": 4451
+  },
+  {
+    "id": 60,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 676,
+    "numTokensOutput": 5218,
+    "numTokensThought": 5211
+  },
+  {
+    "id": 61,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1774,
+    "numTokensOutput": 3857,
+    "numTokensThought": 3851
+  },
+  {
+    "id": 62,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 5340,
+    "numTokensOutput": 3605,
+    "numTokensThought": 3598
+  },
+  {
+    "id": 63,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2006,
+    "numTokensOutput": 8232,
+    "numTokensThought": 8225
+  },
+  {
+    "id": 64,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 5356,
+    "numTokensOutput": 3204,
+    "numTokensThought": 3197
+  },
+  {
+    "id": 65,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 274,
+    "numTokensOutput": 4953,
+    "numTokensThought": 4947
+  },
+  {
+    "id": 66,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1234,
+    "numTokensOutput": 3087,
+    "numTokensThought": 3080
+  },
+  {
+    "id": 67,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2340,
+    "numTokensOutput": 2097,
+    "numTokensThought": 2090
+  },
+  {
+    "id": 68,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2112,
+    "numTokensOutput": 3459,
+    "numTokensThought": 3452
+  },
+  {
+    "id": 69,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1316,
+    "numTokensOutput": 2231,
+    "numTokensThought": 2224
+  },
+  {
+    "id": 70,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2139,
+    "numTokensOutput": 15185,
+    "numTokensThought": 15178
+  },
+  {
+    "id": 71,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 219,
+    "numTokensOutput": 5228,
+    "numTokensThought": 5221
+  },
+  {
+    "id": 72,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 6201,
+    "numTokensOutput": 12283,
+    "numTokensThought": 12276
+  },
+  {
+    "id": 73,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 991,
+    "numTokensOutput": 5896,
+    "numTokensThought": 5889
+  },
+  {
+    "id": 74,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1182,
+    "numTokensOutput": 9292,
+    "numTokensThought": 9285
+  },
+  {
+    "id": 75,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 642,
+    "numTokensOutput": 8155,
+    "numTokensThought": 8148
+  },
+  {
+    "id": 76,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1308,
+    "numTokensOutput": 8182,
+    "numTokensThought": 8175
+  },
+  {
+    "id": 77,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 486,
+    "numTokensOutput": 520,
+    "numTokensThought": 514
+  },
+  {
+    "id": 78,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 426,
+    "numTokensOutput": 9013,
+    "numTokensThought": 9006
+  },
+  {
+    "id": 79,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1945,
+    "numTokensOutput": 9096,
+    "numTokensThought": 9089
+  },
+  {
+    "id": 80,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2830,
+    "numTokensOutput": 2576,
+    "numTokensThought": 2569
+  }
+]
