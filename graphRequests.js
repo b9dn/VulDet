@@ -10,7 +10,7 @@ const db = new sqlite.Database("./formatted_data/data.sqlite");
 // const name = "gemini-2.5-flash";
 const name = "arcee-ai/trinity-large-preview:free";
 const isGemini = false;
-const graphType = "cpg14"; // cfg, pdg, cpg14, cdg, ddg, json_graph_cpg_1, llm_textgraph, llm_textgraph_pdg
+const graphType = "cfg"; // cfg, pdg, cpg14, cdg, ddg, json_graph_cpg_1, llm_textgraph, llm_textgraph_pdg
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
 
@@ -36,7 +36,7 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
       ${data.code}
       \`\`\`
 
-      Graph Type: CPG
+      Graph Type: CFG
 
       Graph Data:
       \`\`\`
@@ -115,7 +115,7 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/\//g, "")}-CPG.json`;
+const path = `./results/${name.replace(/\//g, "")}-CFG.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {
@@ -144,9 +144,10 @@ db.all(
           ? sendMessageGemini(data, name)
           : sendMessageOR(data, name);
 
-        console.log("Success " + data.id);
         const res = await promise;
         results.push(res);
+
+        console.log("Success " + data.id);
 
         await sleep(5 * 1000);
       }

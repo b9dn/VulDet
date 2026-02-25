@@ -1,0 +1,502 @@
+[
+  {
+    "id": 292,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 13,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 242,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 623,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 63,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 144,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 481,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 575,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 162,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 642,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 784,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 104,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 194,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 738,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 325,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 42,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 102,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 82,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 45,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 742,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 290,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 118,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 433,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 472,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 124,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 670,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 643,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 506,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 175,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 207,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 499,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 243,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 208,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 756,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 693,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 27,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 332,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 68,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 295,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 737,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 637,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 492,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 150,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 628,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 733,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 126,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 462,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 248,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 50,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 291,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 562,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 384,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 454,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 340,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 512,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 627,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 475,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 671,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 227,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 233,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 170,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 391,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 782,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 786,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 178,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 149,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 154,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 517,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 171,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 536,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 223,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 717,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 360,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 430,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 353,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 636,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 629,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 110,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 696,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 10,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 146,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 152,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 476,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 366,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 675,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 745,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 18,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 744,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 8,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 607,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 582,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 358,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 687,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 186,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 380,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 341,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 749,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 777,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 410,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 255,
+    "expected": "Safe",
+    "received": "Safe"
+  }
+]
