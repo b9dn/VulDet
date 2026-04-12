@@ -1,7 +1,8 @@
 import fs from "fs";
+import path from "path";
 
 const fix = (name) => {
-  const dataString = fs.readFileSync(`results/${name}`);
+  const dataString = fs.readFileSync(`./results/${name}`);
   const data = JSON.parse(dataString);
   for (let i = 0; i < data.length; i++) {
     const el = data[i];
@@ -15,8 +16,8 @@ const fix = (name) => {
       }
     }
   }
-  const stringFixed = JSON.stringify(data);
-  fs.writeFileSync(`results/${name}`, stringFixed);
+  const stringFixed = JSON.stringify(data, null, 2);
+  fs.writeFileSync(`./results/${name}`, stringFixed);
 };
 
 fs.readdir("./results", (err, files) => {
@@ -26,6 +27,10 @@ fs.readdir("./results", (err, files) => {
   }
 
   files.forEach((file) => {
-    fix(file);
+    const fullPath = path.join("./results", file);
+
+    if (fs.lstatSync(fullPath).isFile()) {
+        fix(file);
+    }
   });
 });

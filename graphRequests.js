@@ -8,9 +8,10 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./formatted_data/data.sqlite");
 
 // const name = "gemini-2.5-flash";
-const name = "arcee-ai/trinity-large-preview:free";
+const name = "google/gemma-4-31b-it:free";
 const isGemini = false;
 const graphType = "cfg"; // cfg, pdg, cpg14, cdg, ddg, json_graph_cpg_1, llm_textgraph, llm_textgraph_pdg
+const path = `./results/${name.replace(/\//g, "")}-CHAIN.json`;
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
 
@@ -22,29 +23,24 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
     },
     {
       role: "user",
-      content: `Analyze the following code and graph for security vulnerabilities.
+      content: `Analyze the following C or C++ code for vulnerabilities.
 
-      - If there are no vulnerabilities in the code and graph, answer "Safe".
-      - If vulnerabilities are found, answer "Vulnerable".
-      - Do not rewrite the code or graph or provide explanations unless explicitly asked.
-      - Take into account functions that are also identified as unsafe
-      - Additional graph is helper for better code understanding
-      - Answer using only ONE WORD and do not add anything else
-      
+      Follow these steps:
+      - Briefly describe the functionality of the code.
+      - Identify possible errors or patterns that may lead to security vulnerabilities.
+      - Decide whether the code is vulnerable.
+      On the final line, return exactly one word: “Safe” or “Vulnerable”.
+
       Code:
       \`\`\`
       ${data.code}
       \`\`\`
-
-      Graph Type: CFG
-
-      Graph Data:
-      \`\`\`
-      ${data[graphType]}
-      \`\`\`
       `,
     },
   ];
+  
+  // console.log("Id = " + data.id);
+  // console.log(data.code);
 
   const response = await fetch(
     "https://openrouter.ai/api/v1/chat/completions",
@@ -69,11 +65,21 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   }
 
   const result = await response.json();
+  if (result.choices == null) {
+    return null;
+  }
+  const result_content = result.choices[0].message.content.replace(/\n/g, "");
+  if (result_content == null) {
+    return null;
+  }
+
+  console.log(`Id: ${data.id} ====================================`)
+  console.log(`Received: ${result_content} ====================================`)
 
   return {
     id: data.id,
     expected: data.isVulnerable ? "Vulnerable" : "Safe",
-    received: result.choices[0].message.content.replace(/\n/g, ""),
+    received: result_content
   };
 };
 
@@ -115,7 +121,6 @@ const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const path = `./results/${name.replace(/\//g, "")}-CFG.json`;
 let prevResults;
 
 if (fs.existsSync(path)) {
@@ -130,13 +135,15 @@ const checkedIds = prevResults.map((val) => {
 });
 
 const whereClause = `WHERE id NOT IN (${checkedIds.join(",")}) AND ${graphType} IS NOT NULL`;
+const MAX_PROMISE_BATCH = 10;
 
 db.all(
-  `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT 100`,
+  `SELECT * FROM data ${whereClause} ORDER BY RANDOM() LIMIT ${MAX_PROMISE_BATCH}`,
   async (err, rows) => {
     if (err) return console.error(err.message);
 
     const results = [];
+    const promises = [];
 
     try {
       for (const data of rows) {
@@ -144,16 +151,23 @@ db.all(
           ? sendMessageGemini(data, name)
           : sendMessageOR(data, name);
 
-        const res = await promise;
-        results.push(res);
+        promises.push(promise.then((res) => {
+          if(res != null) {
+            results.push(res);
+          }
+          console.log("Done id = " + data.id);
+          return res;
+        }));
 
         console.log("Success " + data.id);
 
-        await sleep(5 * 1000);
+        await sleep(3 * 1000);
       }
     } catch (err) {
+      console.error(err)
       console.error("PROCESS STOPPED:", err.message);
     } finally {
+      await Promise.all(promises);
       const combined = [...prevResults, ...results];
       fs.writeFileSync(path, JSON.stringify(combined, null, 2));
       process.exit(1);
