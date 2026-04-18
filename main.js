@@ -7,13 +7,13 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI });
 const db = new sqlite.Database("./data.sqlite");
 
-const name = "stepfun/step-3.5-flash:free";
+const name = "arcee-ai/trinity-large-preview:free";
 // const name = "gemini-2.5-flash";
 const isGemini = false;
-const requestLimit = 400;
+const requestLimit = 10;
 const sleepTime = 2;
-const testType = "Vulnerable"; // Safe or Vulnerable
-const path = `./results/${name.replace(/[<>:"/\\|?*]/g, "")}-VULNERABLE.json`;
+const testType = "Safe"; // Safe or Vulnerable
+const path = `./results/${name.replace(/[<>"/\\|?*]/g, "")}-SAFE_CONTEXT.json`;
 
 const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   const messages = [
@@ -34,7 +34,7 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   
   Code:
   \`\`\`
-  ${testType == "Safe" ? data.code : data.codeVul}
+  ${testType == "Safe" ? data.codeContext : data.codeVulContext}
   \`\`\``,
     },
   ];
@@ -56,6 +56,10 @@ const sendMessageOR = async (data, model, key = process.env.OPENROUTER) => {
   );
 
   const result = await response.json();
+
+  if(result.choices == null || result.choices[0].message.content == null) {
+    return null;
+  }
 
   return {
     id: data.id,
@@ -114,39 +118,39 @@ const checkedIds = prevResults.map((val) => {
 
 const whereClause = `WHERE id NOT IN (${checkedIds.join(",")})`;
 
-const promises = [];
-
 db.all(
   `SELECT * FROM data ${whereClause} LIMIT ${requestLimit}`,
   async (err, rows) => {
     if (err) return console.error(err.message);
-    for (const data of rows) {
-      if (isGemini) {
-        promises.push(
-          sendMessageGemini(data, name).catch((err) => {
-            console.error("Error", err.message);
-            return null;
-          }),
-        );
-      } else {
-        promises.push(
-          sendMessageOR(data, name).catch((err) => {
-            console.error("Error", err.message);
-            return null;
-          }),
-        );
+    const results = [];
+    const promises = [];
+
+    try {
+      for (const data of rows) {
+        const promise = isGemini 
+          ? sendMessageGemini(data, name) 
+          : sendMessageOR(data, name);
+
+        promises.push(promise.then((res) => {
+          if(res != null) {
+            results.push(res);
+          }
+          console.log("Done id = " + data.id);
+          return res;
+        }));
+
+        console.log("Success " + data.id);
+
+        await sleep(200);
       }
-
-      console.log("Next");
-      await sleep(sleepTime * 1000);
+    } catch (err) {
+      console.error(err)
+      console.error("PROCESS STOPPED:", err.message);
+    } finally {
+      await Promise.all(promises);
+      const combined = [...prevResults, ...results];
+      fs.writeFileSync(path, JSON.stringify(combined, null, 2));
+      process.exit(1);
     }
-
-    Promise.all(promises).then((currResults) => {
-      const combined = [
-        ...prevResults,
-        ...currResults.filter((item) => item !== null),
-      ];
-      fs.writeFileSync(path, JSON.stringify(combined));
-    });
-  },
+  }
 );
