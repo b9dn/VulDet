@@ -1,0 +1,52 @@
+[
+  {
+    "id": 705,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 339,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 373,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 565,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 518,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 224,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 355,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 710,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 271,
+    "expected": "Safe",
+    "received": "Safe"
+  },
+  {
+    "id": 230,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  }
+]

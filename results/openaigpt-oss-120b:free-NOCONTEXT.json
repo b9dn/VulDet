@@ -1,0 +1,5914 @@
+[
+  {
+    "id": 8,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1240,
+    "numTokensOutput": 147,
+    "numTokensThought": 159
+  },
+  {
+    "id": 6,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 575,
+    "numTokensOutput": 164,
+    "numTokensThought": 188
+  },
+  {
+    "id": 5,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 389,
+    "numTokensOutput": 190,
+    "numTokensThought": 204
+  },
+  {
+    "id": 7,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3486,
+    "numTokensOutput": 259,
+    "numTokensThought": 285
+  },
+  {
+    "id": 10,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 24008,
+    "numTokensOutput": 287,
+    "numTokensThought": 341
+  },
+  {
+    "id": 3,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1272,
+    "numTokensOutput": 463,
+    "numTokensThought": 537
+  },
+  {
+    "id": 4,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2107,
+    "numTokensOutput": 655,
+    "numTokensThought": 766
+  },
+  {
+    "id": 2,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4846,
+    "numTokensOutput": 637,
+    "numTokensThought": 704
+  },
+  {
+    "id": 1,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 5562,
+    "numTokensOutput": 750,
+    "numTokensThought": 833
+  },
+  {
+    "id": 9,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2041,
+    "numTokensOutput": 863,
+    "numTokensThought": 904
+  },
+  {
+    "id": 19,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1094,
+    "numTokensOutput": 63,
+    "numTokensThought": 66
+  },
+  {
+    "id": 17,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1853,
+    "numTokensOutput": 140,
+    "numTokensThought": 172
+  },
+  {
+    "id": 11,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 416,
+    "numTokensOutput": 203,
+    "numTokensThought": 209
+  },
+  {
+    "id": 13,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1684,
+    "numTokensOutput": 193,
+    "numTokensThought": 221
+  },
+  {
+    "id": 15,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1498,
+    "numTokensOutput": 224,
+    "numTokensThought": 258
+  },
+  {
+    "id": 18,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2044,
+    "numTokensOutput": 392,
+    "numTokensThought": 434
+  },
+  {
+    "id": 20,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1217,
+    "numTokensOutput": 221,
+    "numTokensThought": 259
+  },
+  {
+    "id": 16,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 563,
+    "numTokensOutput": 308,
+    "numTokensThought": 379
+  },
+  {
+    "id": 14,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 342,
+    "numTokensOutput": 111,
+    "numTokensThought": 126
+  },
+  {
+    "id": 12,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1161,
+    "numTokensOutput": 158,
+    "numTokensThought": 201
+  },
+  {
+    "id": 27,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3528,
+    "numTokensOutput": 169,
+    "numTokensThought": 195
+  },
+  {
+    "id": 23,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1068,
+    "numTokensOutput": 209,
+    "numTokensThought": 251
+  },
+  {
+    "id": 28,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3218,
+    "numTokensOutput": 295,
+    "numTokensThought": 346
+  },
+  {
+    "id": 21,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 444,
+    "numTokensOutput": 88,
+    "numTokensThought": 99
+  },
+  {
+    "id": 22,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 599,
+    "numTokensOutput": 124,
+    "numTokensThought": 134
+  },
+  {
+    "id": 30,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 781,
+    "numTokensOutput": 207,
+    "numTokensThought": 236
+  },
+  {
+    "id": 25,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 417,
+    "numTokensOutput": 70,
+    "numTokensThought": 75
+  },
+  {
+    "id": 26,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 920,
+    "numTokensOutput": 466,
+    "numTokensThought": 541
+  },
+  {
+    "id": 29,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1113,
+    "numTokensOutput": 271,
+    "numTokensThought": 308
+  },
+  {
+    "id": 24,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1354,
+    "numTokensOutput": 624,
+    "numTokensThought": 749
+  },
+  {
+    "id": 35,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 532,
+    "numTokensOutput": 94,
+    "numTokensThought": 94
+  },
+  {
+    "id": 36,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 638,
+    "numTokensOutput": 107,
+    "numTokensThought": 113
+  },
+  {
+    "id": 33,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 568,
+    "numTokensOutput": 114,
+    "numTokensThought": 108
+  },
+  {
+    "id": 32,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 809,
+    "numTokensOutput": 213,
+    "numTokensThought": 242
+  },
+  {
+    "id": 31,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2197,
+    "numTokensOutput": 372,
+    "numTokensThought": 420
+  },
+  {
+    "id": 37,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3720,
+    "numTokensOutput": 349,
+    "numTokensThought": 366
+  },
+  {
+    "id": 38,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2882,
+    "numTokensOutput": 526,
+    "numTokensThought": 551
+  },
+  {
+    "id": 40,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1610,
+    "numTokensOutput": 510,
+    "numTokensThought": 598
+  },
+  {
+    "id": 39,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2074,
+    "numTokensOutput": 727,
+    "numTokensThought": 800
+  },
+  {
+    "id": 34,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2534,
+    "numTokensOutput": 899,
+    "numTokensThought": 1081
+  },
+  {
+    "id": 48,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 980,
+    "numTokensOutput": 154,
+    "numTokensThought": 183
+  },
+  {
+    "id": 47,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2180,
+    "numTokensOutput": 170,
+    "numTokensThought": 200
+  },
+  {
+    "id": 45,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1026,
+    "numTokensOutput": 235,
+    "numTokensThought": 260
+  },
+  {
+    "id": 46,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1579,
+    "numTokensOutput": 426,
+    "numTokensThought": 463
+  },
+  {
+    "id": 43,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2505,
+    "numTokensOutput": 514,
+    "numTokensThought": 608
+  },
+  {
+    "id": 41,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 498,
+    "numTokensOutput": 129,
+    "numTokensThought": 150
+  },
+  {
+    "id": 50,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 734,
+    "numTokensOutput": 123,
+    "numTokensThought": 130
+  },
+  {
+    "id": 42,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 569,
+    "numTokensOutput": 543,
+    "numTokensThought": 638
+  },
+  {
+    "id": 49,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2705,
+    "numTokensOutput": 521,
+    "numTokensThought": 621
+  },
+  {
+    "id": 54,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 749,
+    "numTokensOutput": 203,
+    "numTokensThought": 195
+  },
+  {
+    "id": 53,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 510,
+    "numTokensOutput": 221,
+    "numTokensThought": 232
+  },
+  {
+    "id": 51,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2134,
+    "numTokensOutput": 294,
+    "numTokensThought": 330
+  },
+  {
+    "id": 44,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1721,
+    "numTokensOutput": 287,
+    "numTokensThought": 301
+  },
+  {
+    "id": 59,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 311,
+    "numTokensOutput": 334,
+    "numTokensThought": 371
+  },
+  {
+    "id": 56,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1653,
+    "numTokensOutput": 383,
+    "numTokensThought": 464
+  },
+  {
+    "id": 58,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1258,
+    "numTokensOutput": 491,
+    "numTokensThought": 524
+  },
+  {
+    "id": 55,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1068,
+    "numTokensOutput": 441,
+    "numTokensThought": 456
+  },
+  {
+    "id": 57,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 861,
+    "numTokensOutput": 571,
+    "numTokensThought": 490
+  },
+  {
+    "id": 52,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 594,
+    "numTokensOutput": 554,
+    "numTokensThought": 574
+  },
+  {
+    "id": 60,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 834,
+    "numTokensOutput": 59,
+    "numTokensThought": 57
+  },
+  {
+    "id": 61,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1873,
+    "numTokensOutput": 172,
+    "numTokensThought": 195
+  },
+  {
+    "id": 69,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1923,
+    "numTokensOutput": 212,
+    "numTokensThought": 248
+  },
+  {
+    "id": 64,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 5411,
+    "numTokensOutput": 254,
+    "numTokensThought": 281
+  },
+  {
+    "id": 62,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 5390,
+    "numTokensOutput": 330,
+    "numTokensThought": 355
+  },
+  {
+    "id": 67,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2192,
+    "numTokensOutput": 592,
+    "numTokensThought": 652
+  },
+  {
+    "id": 65,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 429,
+    "numTokensOutput": 439,
+    "numTokensThought": 406
+  },
+  {
+    "id": 66,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1528,
+    "numTokensOutput": 468,
+    "numTokensThought": 546
+  },
+  {
+    "id": 68,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1997,
+    "numTokensOutput": 565,
+    "numTokensThought": 633
+  },
+  {
+    "id": 63,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2141,
+    "numTokensOutput": 721,
+    "numTokensThought": 793
+  },
+  {
+    "id": 73,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1337,
+    "numTokensOutput": 355,
+    "numTokensThought": 425
+  },
+  {
+    "id": 70,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2326,
+    "numTokensOutput": 517,
+    "numTokensThought": 636
+  },
+  {
+    "id": 72,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 6435,
+    "numTokensOutput": 497,
+    "numTokensThought": 588
+  },
+  {
+    "id": 78,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 646,
+    "numTokensOutput": 908,
+    "numTokensThought": 964
+  },
+  {
+    "id": 71,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 368,
+    "numTokensOutput": 89,
+    "numTokensThought": 99
+  },
+  {
+    "id": 76,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1466,
+    "numTokensOutput": 162,
+    "numTokensThought": 190
+  },
+  {
+    "id": 75,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 831,
+    "numTokensOutput": 226,
+    "numTokensThought": 254
+  },
+  {
+    "id": 77,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 667,
+    "numTokensOutput": 179,
+    "numTokensThought": 199
+  },
+  {
+    "id": 74,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1337,
+    "numTokensOutput": 221,
+    "numTokensThought": 267
+  },
+  {
+    "id": 79,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2143,
+    "numTokensOutput": 755,
+    "numTokensThought": 818
+  },
+  {
+    "id": 89,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 545,
+    "numTokensOutput": 273,
+    "numTokensThought": 311
+  },
+  {
+    "id": 87,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1134,
+    "numTokensOutput": 456,
+    "numTokensThought": 516
+  },
+  {
+    "id": 84,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2530,
+    "numTokensOutput": 659,
+    "numTokensThought": 802
+  },
+  {
+    "id": 82,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 376,
+    "numTokensOutput": 104,
+    "numTokensThought": 107
+  },
+  {
+    "id": 83,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1150,
+    "numTokensOutput": 92,
+    "numTokensThought": 96
+  },
+  {
+    "id": 80,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3018,
+    "numTokensOutput": 293,
+    "numTokensThought": 316
+  },
+  {
+    "id": 86,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 927,
+    "numTokensOutput": 192,
+    "numTokensThought": 227
+  },
+  {
+    "id": 85,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3823,
+    "numTokensOutput": 273,
+    "numTokensThought": 315
+  },
+  {
+    "id": 81,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4150,
+    "numTokensOutput": 523,
+    "numTokensThought": 595
+  },
+  {
+    "id": 88,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 536,
+    "numTokensOutput": 356,
+    "numTokensThought": 376
+  },
+  {
+    "id": 90,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1377,
+    "numTokensOutput": 129,
+    "numTokensThought": 147
+  },
+  {
+    "id": 97,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 440,
+    "numTokensOutput": 99,
+    "numTokensThought": 95
+  },
+  {
+    "id": 94,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 530,
+    "numTokensOutput": 186,
+    "numTokensThought": 227
+  },
+  {
+    "id": 92,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3047,
+    "numTokensOutput": 209,
+    "numTokensThought": 264
+  },
+  {
+    "id": 98,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 506,
+    "numTokensOutput": 226,
+    "numTokensThought": 234
+  },
+  {
+    "id": 95,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 527,
+    "numTokensOutput": 262,
+    "numTokensThought": 314
+  },
+  {
+    "id": 93,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2439,
+    "numTokensOutput": 222,
+    "numTokensThought": 244
+  },
+  {
+    "id": 91,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2282,
+    "numTokensOutput": 433,
+    "numTokensThought": 478
+  },
+  {
+    "id": 96,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1656,
+    "numTokensOutput": 292,
+    "numTokensThought": 346
+  },
+  {
+    "id": 99,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2205,
+    "numTokensOutput": 331,
+    "numTokensThought": 369
+  },
+  {
+    "id": 109,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 538,
+    "numTokensOutput": 142,
+    "numTokensThought": 166
+  },
+  {
+    "id": 103,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1705,
+    "numTokensOutput": 149,
+    "numTokensThought": 166
+  },
+  {
+    "id": 101,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 602,
+    "numTokensOutput": 167,
+    "numTokensThought": 191
+  },
+  {
+    "id": 104,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 16320,
+    "numTokensOutput": 449,
+    "numTokensThought": 537
+  },
+  {
+    "id": 106,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 5772,
+    "numTokensOutput": 246,
+    "numTokensThought": 288
+  },
+  {
+    "id": 107,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3497,
+    "numTokensOutput": 445,
+    "numTokensThought": 525
+  },
+  {
+    "id": 108,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 10605,
+    "numTokensOutput": 560,
+    "numTokensThought": 666
+  },
+  {
+    "id": 105,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3069,
+    "numTokensOutput": 486,
+    "numTokensThought": 561
+  },
+  {
+    "id": 100,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1826,
+    "numTokensOutput": 714,
+    "numTokensThought": 760
+  },
+  {
+    "id": 102,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1248,
+    "numTokensOutput": 729,
+    "numTokensThought": 840
+  },
+  {
+    "id": 112,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2027,
+    "numTokensOutput": 91,
+    "numTokensThought": 103
+  },
+  {
+    "id": 118,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1010,
+    "numTokensOutput": 115,
+    "numTokensThought": 130
+  },
+  {
+    "id": 113,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1320,
+    "numTokensOutput": 157,
+    "numTokensThought": 180
+  },
+  {
+    "id": 117,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1593,
+    "numTokensOutput": 233,
+    "numTokensThought": 276
+  },
+  {
+    "id": 115,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 609,
+    "numTokensOutput": 345,
+    "numTokensThought": 422
+  },
+  {
+    "id": 111,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 16817,
+    "numTokensOutput": 327,
+    "numTokensThought": 416
+  },
+  {
+    "id": 110,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 10339,
+    "numTokensOutput": 291,
+    "numTokensThought": 366
+  },
+  {
+    "id": 116,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2340,
+    "numTokensOutput": 618,
+    "numTokensThought": 679
+  },
+  {
+    "id": 119,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2381,
+    "numTokensOutput": 468,
+    "numTokensThought": 561
+  },
+  {
+    "id": 114,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 9153,
+    "numTokensOutput": 627,
+    "numTokensThought": 707
+  },
+  {
+    "id": 121,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 327,
+    "numTokensOutput": 112,
+    "numTokensThought": 121
+  },
+  {
+    "id": 124,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1711,
+    "numTokensOutput": 204,
+    "numTokensThought": 261
+  },
+  {
+    "id": 122,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 493,
+    "numTokensOutput": 288,
+    "numTokensThought": 322
+  },
+  {
+    "id": 120,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1746,
+    "numTokensOutput": 182,
+    "numTokensThought": 223
+  },
+  {
+    "id": 123,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2596,
+    "numTokensOutput": 174,
+    "numTokensThought": 187
+  },
+  {
+    "id": 126,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 782,
+    "numTokensOutput": 179,
+    "numTokensThought": 215
+  },
+  {
+    "id": 125,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3803,
+    "numTokensOutput": 260,
+    "numTokensThought": 268
+  },
+  {
+    "id": 129,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1098,
+    "numTokensOutput": 198,
+    "numTokensThought": 221
+  },
+  {
+    "id": 127,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2552,
+    "numTokensOutput": 417,
+    "numTokensThought": 446
+  },
+  {
+    "id": 128,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1730,
+    "numTokensOutput": 604,
+    "numTokensThought": 728
+  },
+  {
+    "id": 131,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 836,
+    "numTokensOutput": 185,
+    "numTokensThought": 223
+  },
+  {
+    "id": 139,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 532,
+    "numTokensOutput": 168,
+    "numTokensThought": 185
+  },
+  {
+    "id": 133,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1278,
+    "numTokensOutput": 276,
+    "numTokensThought": 281
+  },
+  {
+    "id": 138,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1057,
+    "numTokensOutput": 177,
+    "numTokensThought": 210
+  },
+  {
+    "id": 137,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 978,
+    "numTokensOutput": 194,
+    "numTokensThought": 215
+  },
+  {
+    "id": 134,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1347,
+    "numTokensOutput": 181,
+    "numTokensThought": 217
+  },
+  {
+    "id": 135,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3548,
+    "numTokensOutput": 294,
+    "numTokensThought": 345
+  },
+  {
+    "id": 136,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 431,
+    "numTokensOutput": 450,
+    "numTokensThought": 518
+  },
+  {
+    "id": 132,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2220,
+    "numTokensOutput": 258,
+    "numTokensThought": 285
+  },
+  {
+    "id": 130,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3269,
+    "numTokensOutput": 529,
+    "numTokensThought": 570
+  },
+  {
+    "id": 144,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 638,
+    "numTokensOutput": 103,
+    "numTokensThought": 117
+  },
+  {
+    "id": 149,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 654,
+    "numTokensOutput": 135,
+    "numTokensThought": 170
+  },
+  {
+    "id": 142,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1396,
+    "numTokensOutput": 129,
+    "numTokensThought": 138
+  },
+  {
+    "id": 147,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 517,
+    "numTokensOutput": 213,
+    "numTokensThought": 252
+  },
+  {
+    "id": 143,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1056,
+    "numTokensOutput": 446,
+    "numTokensThought": 514
+  },
+  {
+    "id": 148,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 956,
+    "numTokensOutput": 387,
+    "numTokensThought": 438
+  },
+  {
+    "id": 141,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1394,
+    "numTokensOutput": 248,
+    "numTokensThought": 287
+  },
+  {
+    "id": 145,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 826,
+    "numTokensOutput": 602,
+    "numTokensThought": 668
+  },
+  {
+    "id": 146,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 524,
+    "numTokensOutput": 552,
+    "numTokensThought": 675
+  },
+  {
+    "id": 140,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1979,
+    "numTokensOutput": 522,
+    "numTokensThought": 553
+  },
+  {
+    "id": 156,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 382,
+    "numTokensOutput": 85,
+    "numTokensThought": 96
+  },
+  {
+    "id": 152,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1164,
+    "numTokensOutput": 204,
+    "numTokensThought": 246
+  },
+  {
+    "id": 150,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1919,
+    "numTokensOutput": 198,
+    "numTokensThought": 235
+  },
+  {
+    "id": 155,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1341,
+    "numTokensOutput": 252,
+    "numTokensThought": 299
+  },
+  {
+    "id": 158,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1612,
+    "numTokensOutput": 227,
+    "numTokensThought": 263
+  },
+  {
+    "id": 157,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1310,
+    "numTokensOutput": 214,
+    "numTokensThought": 266
+  },
+  {
+    "id": 153,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2912,
+    "numTokensOutput": 535,
+    "numTokensThought": 608
+  },
+  {
+    "id": 154,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1608,
+    "numTokensOutput": 371,
+    "numTokensThought": 464
+  },
+  {
+    "id": 159,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2080,
+    "numTokensOutput": 362,
+    "numTokensThought": 423
+  },
+  {
+    "id": 151,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1903,
+    "numTokensOutput": 442,
+    "numTokensThought": 502
+  },
+  {
+    "id": 168,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 500,
+    "numTokensOutput": 72,
+    "numTokensThought": 75
+  },
+  {
+    "id": 160,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4413,
+    "numTokensOutput": 257,
+    "numTokensThought": 293
+  },
+  {
+    "id": 165,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 6185,
+    "numTokensOutput": 445,
+    "numTokensThought": 506
+  },
+  {
+    "id": 163,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 713,
+    "numTokensOutput": 96,
+    "numTokensThought": 106
+  },
+  {
+    "id": 169,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 745,
+    "numTokensOutput": 138,
+    "numTokensThought": 143
+  },
+  {
+    "id": 167,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2138,
+    "numTokensOutput": 180,
+    "numTokensThought": 193
+  },
+  {
+    "id": 161,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 541,
+    "numTokensOutput": 344,
+    "numTokensThought": 379
+  },
+  {
+    "id": 166,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 5617,
+    "numTokensOutput": 442,
+    "numTokensThought": 493
+  },
+  {
+    "id": 164,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 5694,
+    "numTokensOutput": 736,
+    "numTokensThought": 875
+  },
+  {
+    "id": 162,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1245,
+    "numTokensOutput": 729,
+    "numTokensThought": 822
+  },
+  {
+    "id": 172,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1028,
+    "numTokensOutput": 94,
+    "numTokensThought": 106
+  },
+  {
+    "id": 177,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 374,
+    "numTokensOutput": 118,
+    "numTokensThought": 139
+  },
+  {
+    "id": 171,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 710,
+    "numTokensOutput": 181,
+    "numTokensThought": 192
+  },
+  {
+    "id": 176,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1054,
+    "numTokensOutput": 129,
+    "numTokensThought": 150
+  },
+  {
+    "id": 170,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 537,
+    "numTokensOutput": 173,
+    "numTokensThought": 197
+  },
+  {
+    "id": 179,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 604,
+    "numTokensOutput": 145,
+    "numTokensThought": 159
+  },
+  {
+    "id": 173,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1605,
+    "numTokensOutput": 280,
+    "numTokensThought": 313
+  },
+  {
+    "id": 174,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1784,
+    "numTokensOutput": 301,
+    "numTokensThought": 370
+  },
+  {
+    "id": 178,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 727,
+    "numTokensOutput": 285,
+    "numTokensThought": 333
+  },
+  {
+    "id": 175,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2610,
+    "numTokensOutput": 446,
+    "numTokensThought": 554
+  },
+  {
+    "id": 184,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 816,
+    "numTokensOutput": 118,
+    "numTokensThought": 127
+  },
+  {
+    "id": 180,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 7379,
+    "numTokensOutput": 270,
+    "numTokensThought": 314
+  },
+  {
+    "id": 183,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1066,
+    "numTokensOutput": 126,
+    "numTokensThought": 135
+  },
+  {
+    "id": 185,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 817,
+    "numTokensOutput": 289,
+    "numTokensThought": 315
+  },
+  {
+    "id": 182,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 835,
+    "numTokensOutput": 165,
+    "numTokensThought": 182
+  },
+  {
+    "id": 181,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 642,
+    "numTokensOutput": 206,
+    "numTokensThought": 243
+  },
+  {
+    "id": 187,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 389,
+    "numTokensOutput": 63,
+    "numTokensThought": 59
+  },
+  {
+    "id": 186,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 450,
+    "numTokensOutput": 142,
+    "numTokensThought": 165
+  },
+  {
+    "id": 189,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 662,
+    "numTokensOutput": 80,
+    "numTokensThought": 90
+  },
+  {
+    "id": 188,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 776,
+    "numTokensOutput": 351,
+    "numTokensThought": 387
+  },
+  {
+    "id": 193,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 761,
+    "numTokensOutput": 64,
+    "numTokensThought": 71
+  },
+  {
+    "id": 191,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1570,
+    "numTokensOutput": 58,
+    "numTokensThought": 58
+  },
+  {
+    "id": 197,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 363,
+    "numTokensOutput": 78,
+    "numTokensThought": 82
+  },
+  {
+    "id": 195,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 330,
+    "numTokensOutput": 75,
+    "numTokensThought": 73
+  },
+  {
+    "id": 190,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 672,
+    "numTokensOutput": 120,
+    "numTokensThought": 126
+  },
+  {
+    "id": 194,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 795,
+    "numTokensOutput": 170,
+    "numTokensThought": 200
+  },
+  {
+    "id": 196,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 457,
+    "numTokensOutput": 116,
+    "numTokensThought": 135
+  },
+  {
+    "id": 199,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1001,
+    "numTokensOutput": 208,
+    "numTokensThought": 241
+  },
+  {
+    "id": 198,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1620,
+    "numTokensOutput": 219,
+    "numTokensThought": 260
+  },
+  {
+    "id": 192,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1732,
+    "numTokensOutput": 240,
+    "numTokensThought": 298
+  },
+  {
+    "id": 204,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 360,
+    "numTokensOutput": 55,
+    "numTokensThought": 56
+  },
+  {
+    "id": 205,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 296,
+    "numTokensOutput": 80,
+    "numTokensThought": 84
+  },
+  {
+    "id": 203,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 431,
+    "numTokensOutput": 107,
+    "numTokensThought": 114
+  },
+  {
+    "id": 206,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1316,
+    "numTokensOutput": 105,
+    "numTokensThought": 122
+  },
+  {
+    "id": 200,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 411,
+    "numTokensOutput": 160,
+    "numTokensThought": 184
+  },
+  {
+    "id": 201,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 623,
+    "numTokensOutput": 166,
+    "numTokensThought": 192
+  },
+  {
+    "id": 208,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1600,
+    "numTokensOutput": 177,
+    "numTokensThought": 211
+  },
+  {
+    "id": 207,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 392,
+    "numTokensOutput": 75,
+    "numTokensThought": 73
+  },
+  {
+    "id": 202,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 657,
+    "numTokensOutput": 257,
+    "numTokensThought": 304
+  },
+  {
+    "id": 209,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 4979,
+    "numTokensOutput": 1584,
+    "numTokensThought": 1751
+  },
+  {
+    "id": 211,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 617,
+    "numTokensOutput": 265,
+    "numTokensThought": 322
+  },
+  {
+    "id": 212,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1023,
+    "numTokensOutput": 95,
+    "numTokensThought": 113
+  },
+  {
+    "id": 214,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 738,
+    "numTokensOutput": 64,
+    "numTokensThought": 60
+  },
+  {
+    "id": 213,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 447,
+    "numTokensOutput": 78,
+    "numTokensThought": 81
+  },
+  {
+    "id": 215,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 411,
+    "numTokensOutput": 147,
+    "numTokensThought": 161
+  },
+  {
+    "id": 217,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 637,
+    "numTokensOutput": 150,
+    "numTokensThought": 162
+  },
+  {
+    "id": 210,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 483,
+    "numTokensOutput": 218,
+    "numTokensThought": 260
+  },
+  {
+    "id": 216,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1294,
+    "numTokensOutput": 107,
+    "numTokensThought": 119
+  },
+  {
+    "id": 218,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 523,
+    "numTokensOutput": 145,
+    "numTokensThought": 167
+  },
+  {
+    "id": 219,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 490,
+    "numTokensOutput": 120,
+    "numTokensThought": 122
+  },
+  {
+    "id": 222,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 384,
+    "numTokensOutput": 71,
+    "numTokensThought": 75
+  },
+  {
+    "id": 220,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 372,
+    "numTokensOutput": 132,
+    "numTokensThought": 151
+  },
+  {
+    "id": 223,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 401,
+    "numTokensOutput": 128,
+    "numTokensThought": 140
+  },
+  {
+    "id": 226,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 855,
+    "numTokensOutput": 95,
+    "numTokensThought": 101
+  },
+  {
+    "id": 225,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1306,
+    "numTokensOutput": 122,
+    "numTokensThought": 133
+  },
+  {
+    "id": 224,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1242,
+    "numTokensOutput": 144,
+    "numTokensThought": 167
+  },
+  {
+    "id": 229,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1100,
+    "numTokensOutput": 150,
+    "numTokensThought": 157
+  },
+  {
+    "id": 221,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 553,
+    "numTokensOutput": 175,
+    "numTokensThought": 211
+  },
+  {
+    "id": 228,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 792,
+    "numTokensOutput": 271,
+    "numTokensThought": 302
+  },
+  {
+    "id": 227,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1055,
+    "numTokensOutput": 322,
+    "numTokensThought": 364
+  },
+  {
+    "id": 230,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1530,
+    "numTokensOutput": 73,
+    "numTokensThought": 74
+  },
+  {
+    "id": 233,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1197,
+    "numTokensOutput": 77,
+    "numTokensThought": 86
+  },
+  {
+    "id": 237,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 280,
+    "numTokensOutput": 51,
+    "numTokensThought": 50
+  },
+  {
+    "id": 236,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 630,
+    "numTokensOutput": 62,
+    "numTokensThought": 68
+  },
+  {
+    "id": 235,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 808,
+    "numTokensOutput": 88,
+    "numTokensThought": 95
+  },
+  {
+    "id": 238,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 557,
+    "numTokensOutput": 87,
+    "numTokensThought": 91
+  },
+  {
+    "id": 231,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 471,
+    "numTokensOutput": 146,
+    "numTokensThought": 144
+  },
+  {
+    "id": 239,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3554,
+    "numTokensOutput": 198,
+    "numTokensThought": 227
+  },
+  {
+    "id": 232,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 790,
+    "numTokensOutput": 515,
+    "numTokensThought": 595
+  },
+  {
+    "id": 234,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 952,
+    "numTokensOutput": 434,
+    "numTokensThought": 506
+  },
+  {
+    "id": 243,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 398,
+    "numTokensOutput": 68,
+    "numTokensThought": 69
+  },
+  {
+    "id": 241,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 606,
+    "numTokensOutput": 116,
+    "numTokensThought": 131
+  },
+  {
+    "id": 246,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2931,
+    "numTokensOutput": 136,
+    "numTokensThought": 145
+  },
+  {
+    "id": 242,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1675,
+    "numTokensOutput": 232,
+    "numTokensThought": 270
+  },
+  {
+    "id": 247,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1178,
+    "numTokensOutput": 118,
+    "numTokensThought": 137
+  },
+  {
+    "id": 240,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2892,
+    "numTokensOutput": 286,
+    "numTokensThought": 317
+  },
+  {
+    "id": 245,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1059,
+    "numTokensOutput": 209,
+    "numTokensThought": 262
+  },
+  {
+    "id": 244,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1324,
+    "numTokensOutput": 398,
+    "numTokensThought": 459
+  },
+  {
+    "id": 248,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 765,
+    "numTokensOutput": 228,
+    "numTokensThought": 250
+  },
+  {
+    "id": 249,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 749,
+    "numTokensOutput": 533,
+    "numTokensThought": 625
+  },
+  {
+    "id": 251,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 654,
+    "numTokensOutput": 93,
+    "numTokensThought": 101
+  },
+  {
+    "id": 254,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 481,
+    "numTokensOutput": 89,
+    "numTokensThought": 96
+  },
+  {
+    "id": 252,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 367,
+    "numTokensOutput": 115,
+    "numTokensThought": 121
+  },
+  {
+    "id": 259,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2253,
+    "numTokensOutput": 241,
+    "numTokensThought": 302
+  },
+  {
+    "id": 250,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 605,
+    "numTokensOutput": 324,
+    "numTokensThought": 363
+  },
+  {
+    "id": 256,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 853,
+    "numTokensOutput": 336,
+    "numTokensThought": 413
+  },
+  {
+    "id": 253,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1879,
+    "numTokensOutput": 362,
+    "numTokensThought": 462
+  },
+  {
+    "id": 258,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1267,
+    "numTokensOutput": 325,
+    "numTokensThought": 380
+  },
+  {
+    "id": 257,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 5864,
+    "numTokensOutput": 584,
+    "numTokensThought": 644
+  },
+  {
+    "id": 255,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1024,
+    "numTokensOutput": 440,
+    "numTokensThought": 419
+  },
+  {
+    "id": 264,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 681,
+    "numTokensOutput": 101,
+    "numTokensThought": 112
+  },
+  {
+    "id": 269,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 403,
+    "numTokensOutput": 88,
+    "numTokensThought": 99
+  },
+  {
+    "id": 263,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 568,
+    "numTokensOutput": 167,
+    "numTokensThought": 178
+  },
+  {
+    "id": 265,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 11413,
+    "numTokensOutput": 112,
+    "numTokensThought": 120
+  },
+  {
+    "id": 266,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 656,
+    "numTokensOutput": 112,
+    "numTokensThought": 121
+  },
+  {
+    "id": 268,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1498,
+    "numTokensOutput": 168,
+    "numTokensThought": 188
+  },
+  {
+    "id": 262,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1090,
+    "numTokensOutput": 227,
+    "numTokensThought": 261
+  },
+  {
+    "id": 267,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 870,
+    "numTokensOutput": 218,
+    "numTokensThought": 244
+  },
+  {
+    "id": 260,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2284,
+    "numTokensOutput": 345,
+    "numTokensThought": 391
+  },
+  {
+    "id": 261,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2192,
+    "numTokensOutput": 330,
+    "numTokensThought": 409
+  },
+  {
+    "id": 271,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 853,
+    "numTokensOutput": 165,
+    "numTokensThought": 181
+  },
+  {
+    "id": 279,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 803,
+    "numTokensOutput": 261,
+    "numTokensThought": 306
+  },
+  {
+    "id": 277,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 924,
+    "numTokensOutput": 100,
+    "numTokensThought": 121
+  },
+  {
+    "id": 270,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 925,
+    "numTokensOutput": 231,
+    "numTokensThought": 265
+  },
+  {
+    "id": 275,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 727,
+    "numTokensOutput": 184,
+    "numTokensThought": 201
+  },
+  {
+    "id": 274,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 420,
+    "numTokensOutput": 390,
+    "numTokensThought": 447
+  },
+  {
+    "id": 272,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1126,
+    "numTokensOutput": 461,
+    "numTokensThought": 525
+  },
+  {
+    "id": 278,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1483,
+    "numTokensOutput": 504,
+    "numTokensThought": 571
+  },
+  {
+    "id": 273,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4811,
+    "numTokensOutput": 440,
+    "numTokensThought": 472
+  },
+  {
+    "id": 276,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2260,
+    "numTokensOutput": 730,
+    "numTokensThought": 860
+  },
+  {
+    "id": 281,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 6680,
+    "numTokensOutput": 129,
+    "numTokensThought": 148
+  },
+  {
+    "id": 280,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 524,
+    "numTokensOutput": 120,
+    "numTokensThought": 129
+  },
+  {
+    "id": 282,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1874,
+    "numTokensOutput": 324,
+    "numTokensThought": 397
+  },
+  {
+    "id": 289,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1995,
+    "numTokensOutput": 197,
+    "numTokensThought": 224
+  },
+  {
+    "id": 286,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1774,
+    "numTokensOutput": 166,
+    "numTokensThought": 180
+  },
+  {
+    "id": 283,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1045,
+    "numTokensOutput": 180,
+    "numTokensThought": 223
+  },
+  {
+    "id": 287,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1681,
+    "numTokensOutput": 320,
+    "numTokensThought": 360
+  },
+  {
+    "id": 284,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1091,
+    "numTokensOutput": 569,
+    "numTokensThought": 611
+  },
+  {
+    "id": 288,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2505,
+    "numTokensOutput": 482,
+    "numTokensThought": 488
+  },
+  {
+    "id": 285,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1548,
+    "numTokensOutput": 665,
+    "numTokensThought": 757
+  },
+  {
+    "id": 293,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 573,
+    "numTokensOutput": 129,
+    "numTokensThought": 144
+  },
+  {
+    "id": 299,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 411,
+    "numTokensOutput": 217,
+    "numTokensThought": 254
+  },
+  {
+    "id": 298,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2633,
+    "numTokensOutput": 271,
+    "numTokensThought": 332
+  },
+  {
+    "id": 292,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2854,
+    "numTokensOutput": 337,
+    "numTokensThought": 389
+  },
+  {
+    "id": 296,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3075,
+    "numTokensOutput": 399,
+    "numTokensThought": 474
+  },
+  {
+    "id": 295,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 717,
+    "numTokensOutput": 444,
+    "numTokensThought": 481
+  },
+  {
+    "id": 290,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2070,
+    "numTokensOutput": 573,
+    "numTokensThought": 618
+  },
+  {
+    "id": 294,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4569,
+    "numTokensOutput": 671,
+    "numTokensThought": 727
+  },
+  {
+    "id": 291,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1557,
+    "numTokensOutput": 895,
+    "numTokensThought": 878
+  },
+  {
+    "id": 297,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 5915,
+    "numTokensOutput": 943,
+    "numTokensThought": 1121
+  },
+  {
+    "id": 304,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 804,
+    "numTokensOutput": 111,
+    "numTokensThought": 126
+  },
+  {
+    "id": 302,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 961,
+    "numTokensOutput": 197,
+    "numTokensThought": 225
+  },
+  {
+    "id": 301,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 606,
+    "numTokensOutput": 237,
+    "numTokensThought": 293
+  },
+  {
+    "id": 307,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2346,
+    "numTokensOutput": 273,
+    "numTokensThought": 348
+  },
+  {
+    "id": 309,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3352,
+    "numTokensOutput": 701,
+    "numTokensThought": 824
+  },
+  {
+    "id": 308,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 526,
+    "numTokensOutput": 114,
+    "numTokensThought": 126
+  },
+  {
+    "id": 306,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 639,
+    "numTokensOutput": 160,
+    "numTokensThought": 177
+  },
+  {
+    "id": 303,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 438,
+    "numTokensOutput": 281,
+    "numTokensThought": 309
+  },
+  {
+    "id": 300,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 943,
+    "numTokensOutput": 363,
+    "numTokensThought": 437
+  },
+  {
+    "id": 305,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1538,
+    "numTokensOutput": 466,
+    "numTokensThought": 544
+  },
+  {
+    "id": 314,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 664,
+    "numTokensOutput": 172,
+    "numTokensThought": 186
+  },
+  {
+    "id": 310,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1699,
+    "numTokensOutput": 311,
+    "numTokensThought": 324
+  },
+  {
+    "id": 317,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 554,
+    "numTokensOutput": 237,
+    "numTokensThought": 273
+  },
+  {
+    "id": 311,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 7993,
+    "numTokensOutput": 272,
+    "numTokensThought": 328
+  },
+  {
+    "id": 318,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1696,
+    "numTokensOutput": 370,
+    "numTokensThought": 434
+  },
+  {
+    "id": 313,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3457,
+    "numTokensOutput": 297,
+    "numTokensThought": 337
+  },
+  {
+    "id": 316,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1456,
+    "numTokensOutput": 480,
+    "numTokensThought": 520
+  },
+  {
+    "id": 319,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 643,
+    "numTokensOutput": 607,
+    "numTokensThought": 642
+  },
+  {
+    "id": 315,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2448,
+    "numTokensOutput": 408,
+    "numTokensThought": 457
+  },
+  {
+    "id": 312,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1984,
+    "numTokensOutput": 754,
+    "numTokensThought": 940
+  },
+  {
+    "id": 328,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 454,
+    "numTokensOutput": 71,
+    "numTokensThought": 66
+  },
+  {
+    "id": 323,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 337,
+    "numTokensOutput": 128,
+    "numTokensThought": 140
+  },
+  {
+    "id": 322,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1025,
+    "numTokensOutput": 394,
+    "numTokensThought": 396
+  },
+  {
+    "id": 321,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 920,
+    "numTokensOutput": 150,
+    "numTokensThought": 161
+  },
+  {
+    "id": 326,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 974,
+    "numTokensOutput": 260,
+    "numTokensThought": 287
+  },
+  {
+    "id": 320,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 835,
+    "numTokensOutput": 321,
+    "numTokensThought": 334
+  },
+  {
+    "id": 325,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1161,
+    "numTokensOutput": 571,
+    "numTokensThought": 540
+  },
+  {
+    "id": 329,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1562,
+    "numTokensOutput": 506,
+    "numTokensThought": 564
+  },
+  {
+    "id": 327,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 519,
+    "numTokensOutput": 344,
+    "numTokensThought": 386
+  },
+  {
+    "id": 324,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1373,
+    "numTokensOutput": 331,
+    "numTokensThought": 360
+  },
+  {
+    "id": 336,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 807,
+    "numTokensOutput": 90,
+    "numTokensThought": 102
+  },
+  {
+    "id": 330,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 990,
+    "numTokensOutput": 166,
+    "numTokensThought": 191
+  },
+  {
+    "id": 334,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 518,
+    "numTokensOutput": 139,
+    "numTokensThought": 156
+  },
+  {
+    "id": 331,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1484,
+    "numTokensOutput": 302,
+    "numTokensThought": 318
+  },
+  {
+    "id": 337,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 566,
+    "numTokensOutput": 183,
+    "numTokensThought": 198
+  },
+  {
+    "id": 332,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 861,
+    "numTokensOutput": 421,
+    "numTokensThought": 486
+  },
+  {
+    "id": 335,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 637,
+    "numTokensOutput": 334,
+    "numTokensThought": 346
+  },
+  {
+    "id": 338,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1296,
+    "numTokensOutput": 349,
+    "numTokensThought": 417
+  },
+  {
+    "id": 333,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1477,
+    "numTokensOutput": 368,
+    "numTokensThought": 421
+  },
+  {
+    "id": 339,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1573,
+    "numTokensOutput": 507,
+    "numTokensThought": 605
+  },
+  {
+    "id": 349,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 757,
+    "numTokensOutput": 141,
+    "numTokensThought": 162
+  },
+  {
+    "id": 340,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 343,
+    "numTokensOutput": 172,
+    "numTokensThought": 199
+  },
+  {
+    "id": 341,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 755,
+    "numTokensOutput": 195,
+    "numTokensThought": 221
+  },
+  {
+    "id": 344,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 934,
+    "numTokensOutput": 193,
+    "numTokensThought": 215
+  },
+  {
+    "id": 343,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2324,
+    "numTokensOutput": 315,
+    "numTokensThought": 346
+  },
+  {
+    "id": 348,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2318,
+    "numTokensOutput": 354,
+    "numTokensThought": 404
+  },
+  {
+    "id": 347,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4062,
+    "numTokensOutput": 400,
+    "numTokensThought": 453
+  },
+  {
+    "id": 342,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2323,
+    "numTokensOutput": 422,
+    "numTokensThought": 382
+  },
+  {
+    "id": 346,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3199,
+    "numTokensOutput": 408,
+    "numTokensThought": 494
+  },
+  {
+    "id": 345,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3818,
+    "numTokensOutput": 482,
+    "numTokensThought": 537
+  },
+  {
+    "id": 351,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1297,
+    "numTokensOutput": 244,
+    "numTokensThought": 321
+  },
+  {
+    "id": 357,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 557,
+    "numTokensOutput": 208,
+    "numTokensThought": 231
+  },
+  {
+    "id": 354,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3272,
+    "numTokensOutput": 296,
+    "numTokensThought": 356
+  },
+  {
+    "id": 350,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4009,
+    "numTokensOutput": 184,
+    "numTokensThought": 216
+  },
+  {
+    "id": 356,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 314,
+    "numTokensOutput": 113,
+    "numTokensThought": 124
+  },
+  {
+    "id": 355,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1601,
+    "numTokensOutput": 155,
+    "numTokensThought": 171
+  },
+  {
+    "id": 358,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1760,
+    "numTokensOutput": 401,
+    "numTokensThought": 436
+  },
+  {
+    "id": 359,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 444,
+    "numTokensOutput": 78,
+    "numTokensThought": 80
+  },
+  {
+    "id": 353,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2755,
+    "numTokensOutput": 458,
+    "numTokensThought": 553
+  },
+  {
+    "id": 352,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1879,
+    "numTokensOutput": 538,
+    "numTokensThought": 528
+  },
+  {
+    "id": 365,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 554,
+    "numTokensOutput": 97,
+    "numTokensThought": 105
+  },
+  {
+    "id": 368,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 413,
+    "numTokensOutput": 101,
+    "numTokensThought": 109
+  },
+  {
+    "id": 366,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3179,
+    "numTokensOutput": 105,
+    "numTokensThought": 117
+  },
+  {
+    "id": 360,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2774,
+    "numTokensOutput": 260,
+    "numTokensThought": 290
+  },
+  {
+    "id": 369,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 3062,
+    "numTokensOutput": 157,
+    "numTokensThought": 187
+  },
+  {
+    "id": 363,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1370,
+    "numTokensOutput": 192,
+    "numTokensThought": 236
+  },
+  {
+    "id": 364,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 4519,
+    "numTokensOutput": 157,
+    "numTokensThought": 181
+  },
+  {
+    "id": 367,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 580,
+    "numTokensOutput": 483,
+    "numTokensThought": 438
+  },
+  {
+    "id": 362,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2440,
+    "numTokensOutput": 855,
+    "numTokensThought": 913
+  },
+  {
+    "id": 361,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1568,
+    "numTokensOutput": 1041,
+    "numTokensThought": 1207
+  },
+  {
+    "id": 370,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2322,
+    "numTokensOutput": 208,
+    "numTokensThought": 253
+  },
+  {
+    "id": 378,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2429,
+    "numTokensOutput": 190,
+    "numTokensThought": 223
+  },
+  {
+    "id": 376,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 941,
+    "numTokensOutput": 276,
+    "numTokensThought": 344
+  },
+  {
+    "id": 379,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1012,
+    "numTokensOutput": 195,
+    "numTokensThought": 219
+  },
+  {
+    "id": 377,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 2730,
+    "numTokensOutput": 320,
+    "numTokensThought": 381
+  },
+  {
+    "id": 372,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 728,
+    "numTokensOutput": 354,
+    "numTokensThought": 398
+  },
+  {
+    "id": 371,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 405,
+    "numTokensOutput": 143,
+    "numTokensThought": 159
+  },
+  {
+    "id": 373,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 587,
+    "numTokensOutput": 146,
+    "numTokensThought": 167
+  },
+  {
+    "id": 374,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 743,
+    "numTokensOutput": 128,
+    "numTokensThought": 155
+  },
+  {
+    "id": 375,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 320,
+    "numTokensOutput": 266,
+    "numTokensThought": 320
+  },
+  {
+    "id": 387,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 339,
+    "numTokensOutput": 54,
+    "numTokensThought": 54
+  },
+  {
+    "id": 381,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 548,
+    "numTokensOutput": 122,
+    "numTokensThought": 122
+  },
+  {
+    "id": 386,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 354,
+    "numTokensOutput": 91,
+    "numTokensThought": 93
+  },
+  {
+    "id": 388,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 448,
+    "numTokensOutput": 71,
+    "numTokensThought": 74
+  },
+  {
+    "id": 382,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1305,
+    "numTokensOutput": 137,
+    "numTokensThought": 153
+  },
+  {
+    "id": 385,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2355,
+    "numTokensOutput": 250,
+    "numTokensThought": 282
+  },
+  {
+    "id": 389,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 3192,
+    "numTokensOutput": 227,
+    "numTokensThought": 248
+  },
+  {
+    "id": 383,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2618,
+    "numTokensOutput": 255,
+    "numTokensThought": 315
+  },
+  {
+    "id": 380,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 1454,
+    "numTokensOutput": 328,
+    "numTokensThought": 383
+  },
+  {
+    "id": 384,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1193,
+    "numTokensOutput": 442,
+    "numTokensThought": 434
+  },
+  {
+    "id": 398,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 348,
+    "numTokensOutput": 130,
+    "numTokensThought": 153
+  },
+  {
+    "id": 391,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1320,
+    "numTokensOutput": 227,
+    "numTokensThought": 260
+  },
+  {
+    "id": 390,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 6544,
+    "numTokensOutput": 195,
+    "numTokensThought": 233
+  },
+  {
+    "id": 395,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1529,
+    "numTokensOutput": 354,
+    "numTokensThought": 380
+  },
+  {
+    "id": 396,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1486,
+    "numTokensOutput": 362,
+    "numTokensThought": 401
+  },
+  {
+    "id": 394,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1527,
+    "numTokensOutput": 477,
+    "numTokensThought": 493
+  },
+  {
+    "id": 393,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 1133,
+    "numTokensOutput": 491,
+    "numTokensThought": 524
+  },
+  {
+    "id": 392,
+    "expected": "Safe",
+    "received": "Safe",
+    "numTokensInput": 2926,
+    "numTokensOutput": 516,
+    "numTokensThought": 579
+  },
+  {
+    "id": 397,
+    "expected": "Safe",
+    "received": "Vulnerable",
+    "numTokensInput": 585,
+    "numTokensOutput": 868,
+    "numTokensThought": 867
+  },
+  {
+    "id": 5,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 384,
+    "numTokensOutput": 205,
+    "numTokensThought": 230
+  },
+  {
+    "id": 8,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1150,
+    "numTokensOutput": 228,
+    "numTokensThought": 267
+  },
+  {
+    "id": 4,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2027,
+    "numTokensOutput": 314,
+    "numTokensThought": 359
+  },
+  {
+    "id": 3,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1247,
+    "numTokensOutput": 397,
+    "numTokensThought": 451
+  },
+  {
+    "id": 6,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 564,
+    "numTokensOutput": 229,
+    "numTokensThought": 276
+  },
+  {
+    "id": 9,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1856,
+    "numTokensOutput": 449,
+    "numTokensThought": 487
+  },
+  {
+    "id": 7,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3340,
+    "numTokensOutput": 551,
+    "numTokensThought": 672
+  },
+  {
+    "id": 10,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 23950,
+    "numTokensOutput": 377,
+    "numTokensThought": 421
+  },
+  {
+    "id": 1,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 5558,
+    "numTokensOutput": 1193,
+    "numTokensThought": 1384
+  },
+  {
+    "id": 2,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 4336,
+    "numTokensOutput": 1584,
+    "numTokensThought": 1781
+  },
+  {
+    "id": 14,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 340,
+    "numTokensOutput": 108,
+    "numTokensThought": 118
+  },
+  {
+    "id": 16,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 554,
+    "numTokensOutput": 116,
+    "numTokensThought": 123
+  },
+  {
+    "id": 11,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 412,
+    "numTokensOutput": 156,
+    "numTokensThought": 160
+  },
+  {
+    "id": 12,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1154,
+    "numTokensOutput": 140,
+    "numTokensThought": 161
+  },
+  {
+    "id": 15,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1424,
+    "numTokensOutput": 178,
+    "numTokensThought": 202
+  },
+  {
+    "id": 19,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1052,
+    "numTokensOutput": 134,
+    "numTokensThought": 161
+  },
+  {
+    "id": 17,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2268,
+    "numTokensOutput": 232,
+    "numTokensThought": 276
+  },
+  {
+    "id": 13,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1671,
+    "numTokensOutput": 249,
+    "numTokensThought": 316
+  },
+  {
+    "id": 18,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2015,
+    "numTokensOutput": 473,
+    "numTokensThought": 516
+  },
+  {
+    "id": 20,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1168,
+    "numTokensOutput": 363,
+    "numTokensThought": 451
+  },
+  {
+    "id": 25,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 330,
+    "numTokensOutput": 48,
+    "numTokensThought": 44
+  },
+  {
+    "id": 22,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 663,
+    "numTokensOutput": 151,
+    "numTokensThought": 177
+  },
+  {
+    "id": 28,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3031,
+    "numTokensOutput": 148,
+    "numTokensThought": 176
+  },
+  {
+    "id": 21,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 411,
+    "numTokensOutput": 159,
+    "numTokensThought": 171
+  },
+  {
+    "id": 27,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3528,
+    "numTokensOutput": 190,
+    "numTokensThought": 239
+  },
+  {
+    "id": 26,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 862,
+    "numTokensOutput": 204,
+    "numTokensThought": 256
+  },
+  {
+    "id": 24,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 839,
+    "numTokensOutput": 211,
+    "numTokensThought": 247
+  },
+  {
+    "id": 23,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1080,
+    "numTokensOutput": 256,
+    "numTokensThought": 315
+  },
+  {
+    "id": 29,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1113,
+    "numTokensOutput": 190,
+    "numTokensThought": 223
+  },
+  {
+    "id": 30,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 781,
+    "numTokensOutput": 250,
+    "numTokensThought": 306
+  },
+  {
+    "id": 32,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 796,
+    "numTokensOutput": 176,
+    "numTokensThought": 211
+  },
+  {
+    "id": 35,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 532,
+    "numTokensOutput": 77,
+    "numTokensThought": 78
+  },
+  {
+    "id": 36,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 539,
+    "numTokensOutput": 89,
+    "numTokensThought": 99
+  },
+  {
+    "id": 33,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 484,
+    "numTokensOutput": 228,
+    "numTokensThought": 271
+  },
+  {
+    "id": 37,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3407,
+    "numTokensOutput": 253,
+    "numTokensThought": 293
+  },
+  {
+    "id": 31,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2197,
+    "numTokensOutput": 481,
+    "numTokensThought": 551
+  },
+  {
+    "id": 40,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1569,
+    "numTokensOutput": 219,
+    "numTokensThought": 245
+  },
+  {
+    "id": 34,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2399,
+    "numTokensOutput": 544,
+    "numTokensThought": 625
+  },
+  {
+    "id": 39,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2032,
+    "numTokensOutput": 310,
+    "numTokensThought": 324
+  },
+  {
+    "id": 38,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2724,
+    "numTokensOutput": 1082,
+    "numTokensThought": 1229
+  },
+  {
+    "id": 41,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 479,
+    "numTokensOutput": 228,
+    "numTokensThought": 260
+  },
+  {
+    "id": 50,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 660,
+    "numTokensOutput": 129,
+    "numTokensThought": 139
+  },
+  {
+    "id": 48,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 984,
+    "numTokensOutput": 239,
+    "numTokensThought": 262
+  },
+  {
+    "id": 45,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 984,
+    "numTokensOutput": 186,
+    "numTokensThought": 202
+  },
+  {
+    "id": 43,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2495,
+    "numTokensOutput": 317,
+    "numTokensThought": 383
+  },
+  {
+    "id": 42,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 572,
+    "numTokensOutput": 416,
+    "numTokensThought": 462
+  },
+  {
+    "id": 44,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1274,
+    "numTokensOutput": 187,
+    "numTokensThought": 221
+  },
+  {
+    "id": 49,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2677,
+    "numTokensOutput": 277,
+    "numTokensThought": 334
+  },
+  {
+    "id": 46,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1561,
+    "numTokensOutput": 404,
+    "numTokensThought": 405
+  },
+  {
+    "id": 47,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2117,
+    "numTokensOutput": 256,
+    "numTokensThought": 292
+  },
+  {
+    "id": 60,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 816,
+    "numTokensOutput": 85,
+    "numTokensThought": 90
+  },
+  {
+    "id": 54,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 735,
+    "numTokensOutput": 142,
+    "numTokensThought": 145
+  },
+  {
+    "id": 52,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 597,
+    "numTokensOutput": 317,
+    "numTokensThought": 334
+  },
+  {
+    "id": 59,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 312,
+    "numTokensOutput": 388,
+    "numTokensThought": 437
+  },
+  {
+    "id": 56,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1626,
+    "numTokensOutput": 425,
+    "numTokensThought": 498
+  },
+  {
+    "id": 58,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1240,
+    "numTokensOutput": 360,
+    "numTokensThought": 372
+  },
+  {
+    "id": 57,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 672,
+    "numTokensOutput": 347,
+    "numTokensThought": 344
+  },
+  {
+    "id": 53,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 504,
+    "numTokensOutput": 254,
+    "numTokensThought": 267
+  },
+  {
+    "id": 51,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2116,
+    "numTokensOutput": 418,
+    "numTokensThought": 469
+  },
+  {
+    "id": 55,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 968,
+    "numTokensOutput": 456,
+    "numTokensThought": 496
+  },
+  {
+    "id": 61,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1866,
+    "numTokensOutput": 133,
+    "numTokensThought": 134
+  },
+  {
+    "id": 67,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2490,
+    "numTokensOutput": 252,
+    "numTokensThought": 305
+  },
+  {
+    "id": 68,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2259,
+    "numTokensOutput": 377,
+    "numTokensThought": 423
+  },
+  {
+    "id": 63,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2101,
+    "numTokensOutput": 416,
+    "numTokensThought": 487
+  },
+  {
+    "id": 65,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 429,
+    "numTokensOutput": 479,
+    "numTokensThought": 434
+  },
+  {
+    "id": 64,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 5393,
+    "numTokensOutput": 339,
+    "numTokensThought": 398
+  },
+  {
+    "id": 70,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2307,
+    "numTokensOutput": 489,
+    "numTokensThought": 591
+  },
+  {
+    "id": 69,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1475,
+    "numTokensOutput": 433,
+    "numTokensThought": 530
+  },
+  {
+    "id": 62,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 5377,
+    "numTokensOutput": 567,
+    "numTokensThought": 632
+  },
+  {
+    "id": 66,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1368,
+    "numTokensOutput": 586,
+    "numTokensThought": 673
+  },
+  {
+    "id": 71,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 376,
+    "numTokensOutput": 84,
+    "numTokensThought": 90
+  },
+  {
+    "id": 77,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 641,
+    "numTokensOutput": 306,
+    "numTokensThought": 344
+  },
+  {
+    "id": 80,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2923,
+    "numTokensOutput": 259,
+    "numTokensThought": 303
+  },
+  {
+    "id": 75,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 780,
+    "numTokensOutput": 228,
+    "numTokensThought": 270
+  },
+  {
+    "id": 73,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1143,
+    "numTokensOutput": 259,
+    "numTokensThought": 295
+  },
+  {
+    "id": 79,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2055,
+    "numTokensOutput": 562,
+    "numTokensThought": 612
+  },
+  {
+    "id": 74,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1337,
+    "numTokensOutput": 336,
+    "numTokensThought": 381
+  },
+  {
+    "id": 78,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 580,
+    "numTokensOutput": 790,
+    "numTokensThought": 791
+  },
+  {
+    "id": 72,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 6435,
+    "numTokensOutput": 678,
+    "numTokensThought": 802
+  },
+  {
+    "id": 76,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1460,
+    "numTokensOutput": 1192,
+    "numTokensThought": 1386
+  },
+  {
+    "id": 82,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 368,
+    "numTokensOutput": 105,
+    "numTokensThought": 110
+  },
+  {
+    "id": 83,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1138,
+    "numTokensOutput": 145,
+    "numTokensThought": 162
+  },
+  {
+    "id": 85,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3687,
+    "numTokensOutput": 338,
+    "numTokensThought": 388
+  },
+  {
+    "id": 90,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1263,
+    "numTokensOutput": 264,
+    "numTokensThought": 297
+  },
+  {
+    "id": 84,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2625,
+    "numTokensOutput": 221,
+    "numTokensThought": 291
+  },
+  {
+    "id": 86,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 910,
+    "numTokensOutput": 344,
+    "numTokensThought": 406
+  },
+  {
+    "id": 87,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1165,
+    "numTokensOutput": 363,
+    "numTokensThought": 406
+  },
+  {
+    "id": 81,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3994,
+    "numTokensOutput": 302,
+    "numTokensThought": 325
+  },
+  {
+    "id": 88,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 529,
+    "numTokensOutput": 333,
+    "numTokensThought": 338
+  },
+  {
+    "id": 89,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 531,
+    "numTokensOutput": 492,
+    "numTokensThought": 548
+  },
+  {
+    "id": 97,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 436,
+    "numTokensOutput": 150,
+    "numTokensThought": 162
+  },
+  {
+    "id": 94,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 508,
+    "numTokensOutput": 150,
+    "numTokensThought": 166
+  },
+  {
+    "id": 95,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 528,
+    "numTokensOutput": 193,
+    "numTokensThought": 238
+  },
+  {
+    "id": 98,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 465,
+    "numTokensOutput": 277,
+    "numTokensThought": 305
+  },
+  {
+    "id": 96,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1501,
+    "numTokensOutput": 356,
+    "numTokensThought": 430
+  },
+  {
+    "id": 92,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3042,
+    "numTokensOutput": 393,
+    "numTokensThought": 473
+  },
+  {
+    "id": 99,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2168,
+    "numTokensOutput": 328,
+    "numTokensThought": 341
+  },
+  {
+    "id": 93,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2336,
+    "numTokensOutput": 215,
+    "numTokensThought": 261
+  },
+  {
+    "id": 91,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2095,
+    "numTokensOutput": 526,
+    "numTokensThought": 567
+  },
+  {
+    "id": 100,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1794,
+    "numTokensOutput": 856,
+    "numTokensThought": 948
+  },
+  {
+    "id": 102,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1246,
+    "numTokensOutput": 482,
+    "numTokensThought": 555
+  },
+  {
+    "id": 107,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3466,
+    "numTokensOutput": 380,
+    "numTokensThought": 455
+  },
+  {
+    "id": 110,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 10336,
+    "numTokensOutput": 471,
+    "numTokensThought": 554
+  },
+  {
+    "id": 101,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 586,
+    "numTokensOutput": 212,
+    "numTokensThought": 246
+  },
+  {
+    "id": 103,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1702,
+    "numTokensOutput": 319,
+    "numTokensThought": 355
+  },
+  {
+    "id": 105,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3045,
+    "numTokensOutput": 315,
+    "numTokensThought": 374
+  },
+  {
+    "id": 104,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 16321,
+    "numTokensOutput": 303,
+    "numTokensThought": 380
+  },
+  {
+    "id": 106,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 5742,
+    "numTokensOutput": 466,
+    "numTokensThought": 524
+  },
+  {
+    "id": 108,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 10547,
+    "numTokensOutput": 459,
+    "numTokensThought": 562
+  },
+  {
+    "id": 109,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 523,
+    "numTokensOutput": 406,
+    "numTokensThought": 495
+  },
+  {
+    "id": 118,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1003,
+    "numTokensOutput": 83,
+    "numTokensThought": 81
+  },
+  {
+    "id": 112,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2015,
+    "numTokensOutput": 103,
+    "numTokensThought": 115
+  },
+  {
+    "id": 117,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1579,
+    "numTokensOutput": 162,
+    "numTokensThought": 201
+  },
+  {
+    "id": 120,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1708,
+    "numTokensOutput": 183,
+    "numTokensThought": 209
+  },
+  {
+    "id": 115,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 592,
+    "numTokensOutput": 306,
+    "numTokensThought": 379
+  },
+  {
+    "id": 113,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1313,
+    "numTokensOutput": 416,
+    "numTokensThought": 497
+  },
+  {
+    "id": 119,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2345,
+    "numTokensOutput": 411,
+    "numTokensThought": 469
+  },
+  {
+    "id": 116,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2256,
+    "numTokensOutput": 546,
+    "numTokensThought": 639
+  },
+  {
+    "id": 111,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 16812,
+    "numTokensOutput": 517,
+    "numTokensThought": 652
+  },
+  {
+    "id": 114,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 9152,
+    "numTokensOutput": 1308,
+    "numTokensThought": 1427
+  },
+  {
+    "id": 123,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2477,
+    "numTokensOutput": 174,
+    "numTokensThought": 177
+  },
+  {
+    "id": 126,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1073,
+    "numTokensOutput": 227,
+    "numTokensThought": 275
+  },
+  {
+    "id": 125,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3751,
+    "numTokensOutput": 348,
+    "numTokensThought": 376
+  },
+  {
+    "id": 128,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 923,
+    "numTokensOutput": 880,
+    "numTokensThought": 1045
+  },
+  {
+    "id": 121,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 320,
+    "numTokensOutput": 79,
+    "numTokensThought": 82
+  },
+  {
+    "id": 122,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 469,
+    "numTokensOutput": 153,
+    "numTokensThought": 161
+  },
+  {
+    "id": 129,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1065,
+    "numTokensOutput": 223,
+    "numTokensThought": 269
+  },
+  {
+    "id": 124,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1697,
+    "numTokensOutput": 215,
+    "numTokensThought": 272
+  },
+  {
+    "id": 127,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2394,
+    "numTokensOutput": 371,
+    "numTokensThought": 446
+  },
+  {
+    "id": 130,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3230,
+    "numTokensOutput": 469,
+    "numTokensThought": 580
+  },
+  {
+    "id": 134,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1347,
+    "numTokensOutput": 113,
+    "numTokensThought": 126
+  },
+  {
+    "id": 133,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1266,
+    "numTokensOutput": 262,
+    "numTokensThought": 301
+  },
+  {
+    "id": 135,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3507,
+    "numTokensOutput": 169,
+    "numTokensThought": 205
+  },
+  {
+    "id": 139,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 509,
+    "numTokensOutput": 176,
+    "numTokensThought": 186
+  },
+  {
+    "id": 136,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 426,
+    "numTokensOutput": 185,
+    "numTokensThought": 213
+  },
+  {
+    "id": 132,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2210,
+    "numTokensOutput": 241,
+    "numTokensThought": 287
+  },
+  {
+    "id": 138,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1047,
+    "numTokensOutput": 229,
+    "numTokensThought": 266
+  },
+  {
+    "id": 131,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 879,
+    "numTokensOutput": 404,
+    "numTokensThought": 458
+  },
+  {
+    "id": 137,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 926,
+    "numTokensOutput": 307,
+    "numTokensThought": 378
+  },
+  {
+    "id": 140,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1991,
+    "numTokensOutput": 522,
+    "numTokensThought": 545
+  },
+  {
+    "id": 146,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 505,
+    "numTokensOutput": 172,
+    "numTokensThought": 200
+  },
+  {
+    "id": 150,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1914,
+    "numTokensOutput": 208,
+    "numTokensThought": 281
+  },
+  {
+    "id": 143,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1044,
+    "numTokensOutput": 403,
+    "numTokensThought": 474
+  },
+  {
+    "id": 148,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 942,
+    "numTokensOutput": 415,
+    "numTokensThought": 468
+  },
+  {
+    "id": 149,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 652,
+    "numTokensOutput": 155,
+    "numTokensThought": 193
+  },
+  {
+    "id": 144,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 643,
+    "numTokensOutput": 120,
+    "numTokensThought": 138
+  },
+  {
+    "id": 147,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 515,
+    "numTokensOutput": 172,
+    "numTokensThought": 189
+  },
+  {
+    "id": 142,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1194,
+    "numTokensOutput": 136,
+    "numTokensThought": 158
+  },
+  {
+    "id": 141,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 863,
+    "numTokensOutput": 374,
+    "numTokensThought": 465
+  },
+  {
+    "id": 156,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 304,
+    "numTokensOutput": 74,
+    "numTokensThought": 81
+  },
+  {
+    "id": 155,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1312,
+    "numTokensOutput": 165,
+    "numTokensThought": 201
+  },
+  {
+    "id": 158,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1310,
+    "numTokensOutput": 127,
+    "numTokensThought": 149
+  },
+  {
+    "id": 157,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1267,
+    "numTokensOutput": 338,
+    "numTokensThought": 425
+  },
+  {
+    "id": 151,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1859,
+    "numTokensOutput": 317,
+    "numTokensThought": 364
+  },
+  {
+    "id": 152,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1127,
+    "numTokensOutput": 349,
+    "numTokensThought": 398
+  },
+  {
+    "id": 153,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2894,
+    "numTokensOutput": 271,
+    "numTokensThought": 307
+  },
+  {
+    "id": 145,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 769,
+    "numTokensOutput": 351,
+    "numTokensThought": 406
+  },
+  {
+    "id": 159,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2057,
+    "numTokensOutput": 276,
+    "numTokensThought": 337
+  },
+  {
+    "id": 154,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1602,
+    "numTokensOutput": 336,
+    "numTokensThought": 395
+  },
+  {
+    "id": 169,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 704,
+    "numTokensOutput": 185,
+    "numTokensThought": 198
+  },
+  {
+    "id": 166,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 5613,
+    "numTokensOutput": 509,
+    "numTokensThought": 571
+  },
+  {
+    "id": 168,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 494,
+    "numTokensOutput": 63,
+    "numTokensThought": 63
+  },
+  {
+    "id": 163,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 711,
+    "numTokensOutput": 132,
+    "numTokensThought": 158
+  },
+  {
+    "id": 162,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1149,
+    "numTokensOutput": 249,
+    "numTokensThought": 277
+  },
+  {
+    "id": 160,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 4269,
+    "numTokensOutput": 398,
+    "numTokensThought": 443
+  },
+  {
+    "id": 167,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1919,
+    "numTokensOutput": 287,
+    "numTokensThought": 355
+  },
+  {
+    "id": 161,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 520,
+    "numTokensOutput": 409,
+    "numTokensThought": 453
+  },
+  {
+    "id": 164,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 5679,
+    "numTokensOutput": 447,
+    "numTokensThought": 527
+  },
+  {
+    "id": 165,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3510,
+    "numTokensOutput": 408,
+    "numTokensThought": 442
+  },
+  {
+    "id": 170,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 529,
+    "numTokensOutput": 129,
+    "numTokensThought": 143
+  },
+  {
+    "id": 172,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 996,
+    "numTokensOutput": 124,
+    "numTokensThought": 145
+  },
+  {
+    "id": 179,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 572,
+    "numTokensOutput": 149,
+    "numTokensThought": 192
+  },
+  {
+    "id": 173,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1511,
+    "numTokensOutput": 216,
+    "numTokensThought": 251
+  },
+  {
+    "id": 171,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 710,
+    "numTokensOutput": 393,
+    "numTokensThought": 485
+  },
+  {
+    "id": 178,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 779,
+    "numTokensOutput": 236,
+    "numTokensThought": 273
+  },
+  {
+    "id": 174,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1649,
+    "numTokensOutput": 289,
+    "numTokensThought": 357
+  },
+  {
+    "id": 176,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1119,
+    "numTokensOutput": 242,
+    "numTokensThought": 302
+  },
+  {
+    "id": 177,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 368,
+    "numTokensOutput": 314,
+    "numTokensThought": 358
+  },
+  {
+    "id": 175,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2546,
+    "numTokensOutput": 628,
+    "numTokensThought": 760
+  },
+  {
+    "id": 183,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1034,
+    "numTokensOutput": 141,
+    "numTokensThought": 153
+  },
+  {
+    "id": 187,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 376,
+    "numTokensOutput": 152,
+    "numTokensThought": 171
+  },
+  {
+    "id": 184,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 816,
+    "numTokensOutput": 364,
+    "numTokensThought": 415
+  },
+  {
+    "id": 181,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 636,
+    "numTokensOutput": 174,
+    "numTokensThought": 202
+  },
+  {
+    "id": 186,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 449,
+    "numTokensOutput": 85,
+    "numTokensThought": 94
+  },
+  {
+    "id": 185,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 812,
+    "numTokensOutput": 186,
+    "numTokensThought": 209
+  },
+  {
+    "id": 180,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 7369,
+    "numTokensOutput": 384,
+    "numTokensThought": 452
+  },
+  {
+    "id": 182,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 829,
+    "numTokensOutput": 375,
+    "numTokensThought": 334
+  },
+  {
+    "id": 188,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 763,
+    "numTokensOutput": 147,
+    "numTokensThought": 158
+  },
+  {
+    "id": 189,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 656,
+    "numTokensOutput": 146,
+    "numTokensThought": 164
+  },
+  {
+    "id": 191,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1523,
+    "numTokensOutput": 100,
+    "numTokensThought": 110
+  },
+  {
+    "id": 197,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 446,
+    "numTokensOutput": 59,
+    "numTokensThought": 61
+  },
+  {
+    "id": 196,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 403,
+    "numTokensOutput": 67,
+    "numTokensThought": 68
+  },
+  {
+    "id": 195,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 344,
+    "numTokensOutput": 96,
+    "numTokensThought": 101
+  },
+  {
+    "id": 194,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 701,
+    "numTokensOutput": 112,
+    "numTokensThought": 130
+  },
+  {
+    "id": 193,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 754,
+    "numTokensOutput": 177,
+    "numTokensThought": 203
+  },
+  {
+    "id": 192,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 489,
+    "numTokensOutput": 412,
+    "numTokensThought": 481
+  },
+  {
+    "id": 190,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 672,
+    "numTokensOutput": 486,
+    "numTokensThought": 535
+  },
+  {
+    "id": 199,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 998,
+    "numTokensOutput": 359,
+    "numTokensThought": 407
+  },
+  {
+    "id": 198,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1443,
+    "numTokensOutput": 533,
+    "numTokensThought": 624
+  },
+  {
+    "id": 203,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 420,
+    "numTokensOutput": 94,
+    "numTokensThought": 105
+  },
+  {
+    "id": 204,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 360,
+    "numTokensOutput": 85,
+    "numTokensThought": 96
+  },
+  {
+    "id": 208,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1549,
+    "numTokensOutput": 158,
+    "numTokensThought": 183
+  },
+  {
+    "id": 205,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 492,
+    "numTokensOutput": 229,
+    "numTokensThought": 245
+  },
+  {
+    "id": 207,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 398,
+    "numTokensOutput": 80,
+    "numTokensThought": 83
+  },
+  {
+    "id": 206,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1345,
+    "numTokensOutput": 84,
+    "numTokensThought": 93
+  },
+  {
+    "id": 200,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 349,
+    "numTokensOutput": 271,
+    "numTokensThought": 301
+  },
+  {
+    "id": 202,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1144,
+    "numTokensOutput": 381,
+    "numTokensThought": 438
+  },
+  {
+    "id": 201,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 758,
+    "numTokensOutput": 451,
+    "numTokensThought": 523
+  },
+  {
+    "id": 209,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 4966,
+    "numTokensOutput": 556,
+    "numTokensThought": 608
+  },
+  {
+    "id": 215,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 407,
+    "numTokensOutput": 126,
+    "numTokensThought": 147
+  },
+  {
+    "id": 213,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 447,
+    "numTokensOutput": 69,
+    "numTokensThought": 71
+  },
+  {
+    "id": 212,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 953,
+    "numTokensOutput": 85,
+    "numTokensThought": 90
+  },
+  {
+    "id": 210,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 464,
+    "numTokensOutput": 273,
+    "numTokensThought": 317
+  },
+  {
+    "id": 211,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 613,
+    "numTokensOutput": 181,
+    "numTokensThought": 208
+  },
+  {
+    "id": 214,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 641,
+    "numTokensOutput": 160,
+    "numTokensThought": 178
+  },
+  {
+    "id": 216,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1251,
+    "numTokensOutput": 117,
+    "numTokensThought": 131
+  },
+  {
+    "id": 217,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 633,
+    "numTokensOutput": 223,
+    "numTokensThought": 254
+  },
+  {
+    "id": 219,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 462,
+    "numTokensOutput": 143,
+    "numTokensThought": 155
+  },
+  {
+    "id": 218,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 502,
+    "numTokensOutput": 319,
+    "numTokensThought": 382
+  },
+  {
+    "id": 220,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 312,
+    "numTokensOutput": 177,
+    "numTokensThought": 197
+  },
+  {
+    "id": 221,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 502,
+    "numTokensOutput": 176,
+    "numTokensThought": 195
+  },
+  {
+    "id": 223,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 390,
+    "numTokensOutput": 68,
+    "numTokensThought": 76
+  },
+  {
+    "id": 222,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 367,
+    "numTokensOutput": 83,
+    "numTokensThought": 86
+  },
+  {
+    "id": 231,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 448,
+    "numTokensOutput": 84,
+    "numTokensThought": 92
+  },
+  {
+    "id": 230,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1545,
+    "numTokensOutput": 103,
+    "numTokensThought": 105
+  },
+  {
+    "id": 226,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 804,
+    "numTokensOutput": 125,
+    "numTokensThought": 141
+  },
+  {
+    "id": 225,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1301,
+    "numTokensOutput": 156,
+    "numTokensThought": 176
+  },
+  {
+    "id": 224,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1242,
+    "numTokensOutput": 174,
+    "numTokensThought": 228
+  },
+  {
+    "id": 227,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1002,
+    "numTokensOutput": 149,
+    "numTokensThought": 163
+  },
+  {
+    "id": 229,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1100,
+    "numTokensOutput": 171,
+    "numTokensThought": 200
+  },
+  {
+    "id": 228,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 786,
+    "numTokensOutput": 186,
+    "numTokensThought": 204
+  },
+  {
+    "id": 237,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 270,
+    "numTokensOutput": 48,
+    "numTokensThought": 45
+  },
+  {
+    "id": 236,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 624,
+    "numTokensOutput": 59,
+    "numTokensThought": 61
+  },
+  {
+    "id": 235,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 763,
+    "numTokensOutput": 75,
+    "numTokensThought": 74
+  },
+  {
+    "id": 234,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 931,
+    "numTokensOutput": 129,
+    "numTokensThought": 144
+  },
+  {
+    "id": 233,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 991,
+    "numTokensOutput": 154,
+    "numTokensThought": 181
+  },
+  {
+    "id": 238,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 509,
+    "numTokensOutput": 114,
+    "numTokensThought": 128
+  },
+  {
+    "id": 240,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2886,
+    "numTokensOutput": 161,
+    "numTokensThought": 184
+  },
+  {
+    "id": 241,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 575,
+    "numTokensOutput": 303,
+    "numTokensThought": 354
+  },
+  {
+    "id": 232,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 774,
+    "numTokensOutput": 331,
+    "numTokensThought": 403
+  },
+  {
+    "id": 239,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3230,
+    "numTokensOutput": 349,
+    "numTokensThought": 390
+  },
+  {
+    "id": 242,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1374,
+    "numTokensOutput": 163,
+    "numTokensThought": 199
+  },
+  {
+    "id": 251,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 670,
+    "numTokensOutput": 132,
+    "numTokensThought": 147
+  },
+  {
+    "id": 245,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1058,
+    "numTokensOutput": 280,
+    "numTokensThought": 345
+  },
+  {
+    "id": 243,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 398,
+    "numTokensOutput": 62,
+    "numTokensThought": 58
+  },
+  {
+    "id": 244,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1216,
+    "numTokensOutput": 140,
+    "numTokensThought": 167
+  },
+  {
+    "id": 247,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1178,
+    "numTokensOutput": 132,
+    "numTokensThought": 143
+  },
+  {
+    "id": 246,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2869,
+    "numTokensOutput": 203,
+    "numTokensThought": 222
+  },
+  {
+    "id": 248,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 819,
+    "numTokensOutput": 405,
+    "numTokensThought": 488
+  },
+  {
+    "id": 249,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 711,
+    "numTokensOutput": 273,
+    "numTokensThought": 302
+  },
+  {
+    "id": 250,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 584,
+    "numTokensOutput": 225,
+    "numTokensThought": 205
+  },
+  {
+    "id": 252,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 340,
+    "numTokensOutput": 55,
+    "numTokensThought": 49
+  },
+  {
+    "id": 254,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 482,
+    "numTokensOutput": 59,
+    "numTokensThought": 63
+  },
+  {
+    "id": 255,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 880,
+    "numTokensOutput": 148,
+    "numTokensThought": 173
+  },
+  {
+    "id": 260,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2218,
+    "numTokensOutput": 263,
+    "numTokensThought": 300
+  },
+  {
+    "id": 259,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2251,
+    "numTokensOutput": 211,
+    "numTokensThought": 252
+  },
+  {
+    "id": 261,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2180,
+    "numTokensOutput": 287,
+    "numTokensThought": 364
+  },
+  {
+    "id": 253,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2183,
+    "numTokensOutput": 300,
+    "numTokensThought": 401
+  },
+  {
+    "id": 258,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1248,
+    "numTokensOutput": 353,
+    "numTokensThought": 408
+  },
+  {
+    "id": 256,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 853,
+    "numTokensOutput": 471,
+    "numTokensThought": 513
+  },
+  {
+    "id": 257,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 5665,
+    "numTokensOutput": 598,
+    "numTokensThought": 688
+  },
+  {
+    "id": 262,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1042,
+    "numTokensOutput": 205,
+    "numTokensThought": 245
+  },
+  {
+    "id": 271,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 946,
+    "numTokensOutput": 116,
+    "numTokensThought": 120
+  },
+  {
+    "id": 264,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 649,
+    "numTokensOutput": 193,
+    "numTokensThought": 202
+  },
+  {
+    "id": 267,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 802,
+    "numTokensOutput": 117,
+    "numTokensThought": 130
+  },
+  {
+    "id": 266,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 651,
+    "numTokensOutput": 200,
+    "numTokensThought": 237
+  },
+  {
+    "id": 263,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 568,
+    "numTokensOutput": 149,
+    "numTokensThought": 172
+  },
+  {
+    "id": 270,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 909,
+    "numTokensOutput": 109,
+    "numTokensThought": 126
+  },
+  {
+    "id": 269,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 383,
+    "numTokensOutput": 80,
+    "numTokensThought": 86
+  },
+  {
+    "id": 265,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 11392,
+    "numTokensOutput": 162,
+    "numTokensThought": 188
+  },
+  {
+    "id": 268,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1469,
+    "numTokensOutput": 264,
+    "numTokensThought": 301
+  },
+  {
+    "id": 277,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 755,
+    "numTokensOutput": 102,
+    "numTokensThought": 117
+  },
+  {
+    "id": 281,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 6626,
+    "numTokensOutput": 131,
+    "numTokensThought": 145
+  },
+  {
+    "id": 272,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1121,
+    "numTokensOutput": 225,
+    "numTokensThought": 255
+  },
+  {
+    "id": 275,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 702,
+    "numTokensOutput": 251,
+    "numTokensThought": 281
+  },
+  {
+    "id": 276,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2112,
+    "numTokensOutput": 275,
+    "numTokensThought": 326
+  },
+  {
+    "id": 280,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 553,
+    "numTokensOutput": 199,
+    "numTokensThought": 230
+  },
+  {
+    "id": 278,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1521,
+    "numTokensOutput": 384,
+    "numTokensThought": 440
+  },
+  {
+    "id": 279,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 765,
+    "numTokensOutput": 362,
+    "numTokensThought": 434
+  },
+  {
+    "id": 274,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 420,
+    "numTokensOutput": 385,
+    "numTokensThought": 386
+  },
+  {
+    "id": 273,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 4776,
+    "numTokensOutput": 439,
+    "numTokensThought": 549
+  },
+  {
+    "id": 282,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1814,
+    "numTokensOutput": 262,
+    "numTokensThought": 310
+  },
+  {
+    "id": 284,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1072,
+    "numTokensOutput": 471,
+    "numTokensThought": 518
+  },
+  {
+    "id": 291,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1557,
+    "numTokensOutput": 793,
+    "numTokensThought": 788
+  },
+  {
+    "id": 286,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1729,
+    "numTokensOutput": 239,
+    "numTokensThought": 242
+  },
+  {
+    "id": 283,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1091,
+    "numTokensOutput": 348,
+    "numTokensThought": 411
+  },
+  {
+    "id": 289,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 2094,
+    "numTokensOutput": 206,
+    "numTokensThought": 236
+  },
+  {
+    "id": 290,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2054,
+    "numTokensOutput": 270,
+    "numTokensThought": 309
+  },
+  {
+    "id": 288,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2505,
+    "numTokensOutput": 371,
+    "numTokensThought": 400
+  },
+  {
+    "id": 287,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1653,
+    "numTokensOutput": 409,
+    "numTokensThought": 434
+  },
+  {
+    "id": 285,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1501,
+    "numTokensOutput": 838,
+    "numTokensThought": 897
+  },
+  {
+    "id": 293,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 507,
+    "numTokensOutput": 102,
+    "numTokensThought": 104
+  },
+  {
+    "id": 299,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 402,
+    "numTokensOutput": 219,
+    "numTokensThought": 260
+  },
+  {
+    "id": 295,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 617,
+    "numTokensOutput": 347,
+    "numTokensThought": 367
+  },
+  {
+    "id": 300,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 933,
+    "numTokensOutput": 360,
+    "numTokensThought": 435
+  },
+  {
+    "id": 292,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2841,
+    "numTokensOutput": 316,
+    "numTokensThought": 360
+  },
+  {
+    "id": 297,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 5734,
+    "numTokensOutput": 327,
+    "numTokensThought": 393
+  },
+  {
+    "id": 298,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2575,
+    "numTokensOutput": 479,
+    "numTokensThought": 601
+  },
+  {
+    "id": 294,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 4618,
+    "numTokensOutput": 456,
+    "numTokensThought": 543
+  },
+  {
+    "id": 301,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 698,
+    "numTokensOutput": 585,
+    "numTokensThought": 662
+  },
+  {
+    "id": 296,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3044,
+    "numTokensOutput": 734,
+    "numTokensThought": 851
+  },
+  {
+    "id": 304,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 757,
+    "numTokensOutput": 209,
+    "numTokensThought": 245
+  },
+  {
+    "id": 308,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 427,
+    "numTokensOutput": 90,
+    "numTokensThought": 100
+  },
+  {
+    "id": 302,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1053,
+    "numTokensOutput": 176,
+    "numTokensThought": 180
+  },
+  {
+    "id": 303,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 405,
+    "numTokensOutput": 196,
+    "numTokensThought": 212
+  },
+  {
+    "id": 310,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1650,
+    "numTokensOutput": 149,
+    "numTokensThought": 165
+  },
+  {
+    "id": 306,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 634,
+    "numTokensOutput": 257,
+    "numTokensThought": 300
+  },
+  {
+    "id": 305,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1399,
+    "numTokensOutput": 467,
+    "numTokensThought": 537
+  },
+  {
+    "id": 307,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2358,
+    "numTokensOutput": 446,
+    "numTokensThought": 482
+  },
+  {
+    "id": 311,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 7929,
+    "numTokensOutput": 249,
+    "numTokensThought": 281
+  },
+  {
+    "id": 309,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 3308,
+    "numTokensOutput": 420,
+    "numTokensThought": 523
+  },
+  {
+    "id": 312,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1909,
+    "numTokensOutput": 456,
+    "numTokensThought": 573
+  },
+  {
+    "id": 316,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1457,
+    "numTokensOutput": 403,
+    "numTokensThought": 455
+  },
+  {
+    "id": 314,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 665,
+    "numTokensOutput": 155,
+    "numTokensThought": 175
+  },
+  {
+    "id": 317,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 542,
+    "numTokensOutput": 263,
+    "numTokensThought": 278
+  },
+  {
+    "id": 320,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 755,
+    "numTokensOutput": 145,
+    "numTokensThought": 168
+  },
+  {
+    "id": 321,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 902,
+    "numTokensOutput": 185,
+    "numTokensThought": 194
+  },
+  {
+    "id": 313,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 3372,
+    "numTokensOutput": 421,
+    "numTokensThought": 481
+  },
+  {
+    "id": 315,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 2448,
+    "numTokensOutput": 457,
+    "numTokensThought": 524
+  },
+  {
+    "id": 318,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1531,
+    "numTokensOutput": 363,
+    "numTokensThought": 410
+  },
+  {
+    "id": 319,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 647,
+    "numTokensOutput": 673,
+    "numTokensThought": 741
+  },
+  {
+    "id": 328,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 465,
+    "numTokensOutput": 125,
+    "numTokensThought": 131
+  },
+  {
+    "id": 323,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 338,
+    "numTokensOutput": 117,
+    "numTokensThought": 137
+  },
+  {
+    "id": 322,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1024,
+    "numTokensOutput": 200,
+    "numTokensThought": 218
+  },
+  {
+    "id": 330,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1082,
+    "numTokensOutput": 160,
+    "numTokensThought": 188
+  },
+  {
+    "id": 329,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1560,
+    "numTokensOutput": 286,
+    "numTokensThought": 344
+  },
+  {
+    "id": 326,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 932,
+    "numTokensOutput": 321,
+    "numTokensThought": 347
+  },
+  {
+    "id": 325,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1156,
+    "numTokensOutput": 332,
+    "numTokensThought": 329
+  },
+  {
+    "id": 331,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1421,
+    "numTokensOutput": 392,
+    "numTokensThought": 425
+  },
+  {
+    "id": 327,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 517,
+    "numTokensOutput": 516,
+    "numTokensThought": 575
+  },
+  {
+    "id": 324,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1372,
+    "numTokensOutput": 592,
+    "numTokensThought": 611
+  },
+  {
+    "id": 340,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 308,
+    "numTokensOutput": 101,
+    "numTokensThought": 110
+  },
+  {
+    "id": 332,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 828,
+    "numTokensOutput": 286,
+    "numTokensThought": 329
+  },
+  {
+    "id": 334,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 512,
+    "numTokensOutput": 129,
+    "numTokensThought": 129
+  },
+  {
+    "id": 336,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 806,
+    "numTokensOutput": 115,
+    "numTokensThought": 132
+  },
+  {
+    "id": 333,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1463,
+    "numTokensOutput": 383,
+    "numTokensThought": 425
+  },
+  {
+    "id": 335,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 632,
+    "numTokensOutput": 282,
+    "numTokensThought": 316
+  },
+  {
+    "id": 337,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 563,
+    "numTokensOutput": 318,
+    "numTokensThought": 314
+  },
+  {
+    "id": 341,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 745,
+    "numTokensOutput": 305,
+    "numTokensThought": 334
+  },
+  {
+    "id": 339,
+    "expected": "Vulnerable",
+    "received": "Vulnerable",
+    "numTokensInput": 1476,
+    "numTokensOutput": 436,
+    "numTokensThought": 526
+  },
+  {
+    "id": 338,
+    "expected": "Vulnerable",
+    "received": "Safe",
+    "numTokensInput": 1263,
+    "numTokensOutput": 418,
+    "numTokensThought": 474
+  }
+]

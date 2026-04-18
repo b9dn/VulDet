@@ -1,0 +1,17 @@
+[
+  {
+    "id": 742,
+    "expected": "Vulnerable",
+    "received": "Vulnerable"
+  },
+  {
+    "id": 659,
+    "expected": "Vulnerable",
+    "received": "Safe"
+  },
+  {
+    "id": 136,
+    "expected": "Safe",
+    "received": "Vulnerable"
+  }
+]
